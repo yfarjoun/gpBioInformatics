@@ -3,7 +3,7 @@ package org.broadinstitute.gp.bioinformatics
 
 import org.broadinstitute.sting.queue.QScript
 import org.broadinstitute.sting.queue.extensions.gatk._
-import org.broadinstitute.sting.commandline.Argument
+import scala.annotation.tailrec
 
 class ExtractSubPopulationMAF extends QScript {
   @Input(shortName = "vcfSrcDir", doc = "The source directory of VCFs to process", required = false)
@@ -45,13 +45,22 @@ class ExtractSubPopulationMAF extends QScript {
 
   }
 
-  def findallVCF(f: Seq[File]): Seq[File] = {
+  @tailrec
+  final def findallVCF(f: Seq[File], acc:Seq[File]=Nil): Seq[File] = {
+
     val these = f.flatMap(_.listFiles.filter(_.endsWith(".vcf")))
-    these ++ findallVCF(these.filter(_.isDirectory))
+
+    findallVCF(these.filter(_.isDirectory),acc=acc++these)
   }
 
   def script() {
 
+
+    val cv = new CombineVariants with UNIVERSAL_GATK_ARGS
+    cv.variant = findallVCF(List(vcfSrcDir))
+    cv.out=swapExt(out,"vcf","subsetted.vcf")
+
+    add(cv)
 
     for (pop <- TargetPopulations) {
 
@@ -61,9 +70,9 @@ class ExtractSubPopulationMAF extends QScript {
       gps.SamplePanel = SamplePanel
       add(gps)
 
-      val sv = new SelectVariants with UNIVERSAL_GATK_ARGS
-      sv.variant = findallVCF(vcfSrcDir)
+      var sv = new SelectVariants
 
+      sv.variant=cv.out
       sv.sample_file :+= gps.pop
       sv.excludeNonVariants = false
       sv.keepOriginalAC = false
