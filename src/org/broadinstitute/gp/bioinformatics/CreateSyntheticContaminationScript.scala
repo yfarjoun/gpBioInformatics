@@ -51,7 +51,7 @@ import org.broadinstitute.sting.queue.QScript
 import org.broadinstitute.sting.queue.extensions.gatk._
 import org.broadinstitute.sting.queue.function.JavaCommandLineFunction
 import org.broadinstitute.sting.commandline.ClassType
-import org.broadinstitute.gp.bioinformatics.RScriptFunction
+import org.broadinstitute.gp.bioinformatics.utils.RScriptFunction
 
 class CreateSyntheticContaminationScript extends QScript {
   qscript =>

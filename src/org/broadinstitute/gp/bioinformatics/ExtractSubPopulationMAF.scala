@@ -4,6 +4,7 @@ package org.broadinstitute.gp.bioinformatics
 import org.broadinstitute.sting.queue.QScript
 import org.broadinstitute.sting.queue.extensions.gatk._
 import scala.annotation.tailrec
+import org.broadinstitute.gp.bioinformatics.utils.RScriptFunction
 
 class ExtractSubPopulationMAF extends QScript {
   @Input(shortName = "vcfSrcDir", doc = "The source directory of VCFs to process", required = false)
@@ -21,7 +22,7 @@ class ExtractSubPopulationMAF extends QScript {
   @Argument(shortName = "scatterCount", doc = "The number of ways to scatter this job", required = false)
   val scatterCount: Int = 25
 
-  @Argument(shortName = "L", required = "false")
+  @Argument(shortName = "L", required = false)
   var interval: String = _
 
   @Argument(shortName = "R", required = false)

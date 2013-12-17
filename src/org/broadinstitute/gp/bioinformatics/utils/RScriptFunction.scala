@@ -1,7 +1,7 @@
 
 
 
-package org.broadinstitute.gp.bioinformatics
+package org.broadinstitute.gp.bioinformatics.utils
 
 import org.broadinstitute.sting.queue.function.CommandLineFunction
 

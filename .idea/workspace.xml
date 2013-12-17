@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="d17c68eb-a92b-4499-88c0-89e11f16825d" name="Default" comment="thanks to Alec project is working again. Also made a change to the ExtractMAF script&#10;">
+    <list default="true" readonly="true" id="d17c68eb-a92b-4499-88c0-89e11f16825d" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/RScriptFunction.scala" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/RScriptFunction.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/CreateSyntheticContaminationScript.scala" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/CreateSyntheticContaminationScript.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gpBioInfo.iws" />
@@ -68,10 +69,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FindNoKmerCoverageScript.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FindNoKmerCoverageScript.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="21" selection-start="11649" selection-end="11649" vertical-scroll-proportion="0.5638149" vertical-offset="1128" max-vertical-offset="4470">
+            <state line="61" column="52" selection-start="8960" selection-end="8960" vertical-scroll-proportion="-7.0" vertical-offset="537" max-vertical-offset="4470">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#8402#8447#0" expanded="true" />
@@ -83,7 +84,7 @@
       <file leaf-file-name="ExtractSubPopulationMAF.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="73" column="19" selection-start="2417" selection-end="2417" vertical-scroll-proportion="0.0" vertical-offset="298" max-vertical-offset="1395">
+            <state line="24" column="45" selection-start="1104" selection-end="1104" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1410">
               <folding>
                 <element signature="e#47#92#0" expanded="true" />
               </folding>
@@ -103,16 +104,16 @@
       <file leaf-file-name="CreateSyntheticContaminationScript.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/CreateSyntheticContaminationScript.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="69" selection-start="8689" selection-end="8689" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4785">
+            <state line="53" column="0" selection-start="8630" selection-end="8630" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4785">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RScriptFunction.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/RScriptFunction.scala">
+      <file leaf-file-name="RScriptFunction.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/RScriptFunction.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="77" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+            <state line="12" column="25" selection-start="193" selection-end="193" vertical-scroll-proportion="0.24793388" vertical-offset="0" max-vertical-offset="726">
               <folding />
             </state>
           </provider>
@@ -128,6 +129,11 @@
   <component name="Git.Settings">
     <option name="SYNC_SETTING" value="DONT" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="testing" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -136,8 +142,9 @@
         <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/CombineAllVCFs.scala" />
         <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/RScriptFunction.scala" />
         <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/CreateSyntheticContaminationScript.scala" />
-        <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala" />
         <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala" />
+        <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala" />
+        <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/RScriptFunction.scala" />
       </list>
     </option>
   </component>
@@ -246,6 +253,9 @@
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.broadinstitute.gp.bioinformatics" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.broadinstitute.gp.bioinformatics.utils" />
     </key>
   </component>
   <component name="RunManager" selected="Scala Console.Scala Console">
@@ -555,14 +565,31 @@
       <created>1386877746415</created>
       <updated>1386877746415</updated>
     </task>
+    <task id="LOCAL-00001" summary="thanks to Alec project is working again. Also made a change to the ExtractMAF script&#10;">
+      <created>1387310995310</created>
+      <updated>1387310995310</updated>
+    </task>
+    <task id="LOCAL-00002" summary="small change to annotation&#10;">
+      <created>1387311673578</created>
+      <updated>1387311673579</updated>
+    </task>
+    <task id="LOCAL-00003" summary="small change to annotation&#10;">
+      <created>1387311760370</created>
+      <updated>1387311760370</updated>
+    </task>
+    <task id="LOCAL-00004" summary="small change to annotation&#10;">
+      <created>1387311835345</created>
+      <updated>1387311835345</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="117" y="109" width="2440" height="1194" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977778" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977778" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -570,7 +597,7 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977778" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977778" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977778" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -599,7 +626,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="thanks to Alec project is working again. Also made a change to the ExtractMAF script&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="thanks to Alec project is working again. Also made a change to the ExtractMAF script&#10;" />
+    <MESSAGE value="small change to annotation&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="small change to annotation&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -635,7 +663,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/RScriptFunction.scala">
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/RScriptFunction.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="77" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="420">
           <folding />
@@ -668,7 +696,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/RScriptFunction.scala">
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/RScriptFunction.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="77" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="420">
           <folding />
@@ -732,7 +760,7 @@
         <state line="0" column="38" selection-start="8" selection-end="38" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/RScriptFunction.scala">
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/RScriptFunction.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="21" column="28" selection-start="412" selection-end="412" vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="420">
           <folding />
@@ -782,17 +810,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/RScriptFunction.scala">
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/CreateSyntheticContaminationScript.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="77" selection-start="341" selection-end="341" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="420">
+        <state line="53" column="0" selection-start="8630" selection-end="8630" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4785">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/CreateSyntheticContaminationScript.scala">
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="69" selection-start="8689" selection-end="8689" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4785">
-          <folding />
+        <state line="24" column="45" selection-start="1104" selection-end="1104" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1410">
+          <folding>
+            <element signature="e#47#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="52" selection-start="8960" selection-end="8960" vertical-scroll-proportion="-7.0" vertical-offset="537" max-vertical-offset="4470">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#8402#8447#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -803,22 +843,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala">
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/RScriptFunction.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="19" selection-start="2417" selection-end="2417" vertical-scroll-proportion="0.0" vertical-offset="298" max-vertical-offset="1395">
-          <folding>
-            <element signature="e#47#92#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="21" selection-start="11649" selection-end="11649" vertical-scroll-proportion="0.5638149" vertical-offset="1128" max-vertical-offset="4470">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#8402#8447#0" expanded="true" />
-          </folding>
+        <state line="12" column="25" selection-start="193" selection-end="193" vertical-scroll-proportion="0.24793388" vertical-offset="0" max-vertical-offset="726">
+          <folding />
         </state>
       </provider>
     </entry>
