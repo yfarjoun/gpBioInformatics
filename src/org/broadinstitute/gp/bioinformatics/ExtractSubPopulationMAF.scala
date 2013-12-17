@@ -47,14 +47,11 @@ class ExtractSubPopulationMAF extends QScript {
 
   }
 
-  //@tailrec
-  final def findallVCF(f: Seq[File], acc:Seq[File]=Nil): Seq[File] = {
+  final def findallVCF(f: Seq[File]): Seq[File] = {
 
     val dirs=f.filter(_.isDirectory).filter(x=> !x.getName.startsWith("."))
-    val newFiles=f.filter(x=> x.isFile & (x.getName.endsWith(".vcf")| x.getName.endsWith(".vcf.gz")))
-
-    if(!dirs.isEmpty) findallVCF(dirs.flatMap(_.listFiles),acc=acc++newFiles)
-    else acc++newFiles
+    println(dirs)
+    (f++dirs.flatMap(_.listFiles())).filter(x=> x.isFile & (x.getName.endsWith(".vcf")| x.getName.endsWith(".vcf.gz")))
   }
 
   def script() {
