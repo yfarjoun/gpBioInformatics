@@ -16,7 +16,7 @@ class ExtractSubPopulationMAF extends QScript {
   @Input(shortName = "panel", doc = "The file containing the population description of the different samples", required = false)
   var SamplePanel: File = "/humgen/1kg/DCC/ftp/release/20110521/phase1_integrated_calls.20101123.ALL.panel"
 
-  @Argument(shortName = "pop", doc = "The list of target populations", required = false)
+  @Argument(shortName = "pop", doc = "The list of target populations", required = true)
   var TargetPopulations: List[String] = _
 
   @Argument(shortName = "scatterCount", doc = "The number of ways to scatter this job", required = false)
@@ -41,12 +41,13 @@ class ExtractSubPopulationMAF extends QScript {
 
     lazy val rscript: String = s"""
         |read.table($SamplePanel ,col.names=c("SAMPLE","SUB.POP","POP","SEQUENCING.CENTER","SEQUENCING.CENTER.2"),fill=TRUE)->data
+        |show(unique(data$$POP))
         |write.table(file=$SampleList,subset(data,POP="AFR")$$SAMPLE)
         """.stripMargin
 
   }
 
-  @tailrec
+  //@tailrec
   final def findallVCF(f: Seq[File], acc:Seq[File]=Nil): Seq[File] = {
 
     val dirs=f.filter(_.isDirectory).filter(x=> !x.getName.startsWith("."))
