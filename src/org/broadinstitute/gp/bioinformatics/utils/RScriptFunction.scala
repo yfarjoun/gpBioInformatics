@@ -10,9 +10,9 @@ import org.broadinstitute.sting.queue.function.CommandLineFunction
  */
 
 
-abstract trait RScriptFunction extends CommandLineFunction{
+trait RScriptFunction extends CommandLineFunction{
 
-  abstract val rscript:String
+  val rscript:String
 
   override def commandLine=required("echo", rscript) +
     required("|",escape=false) +
