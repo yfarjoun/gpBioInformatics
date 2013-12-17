@@ -57,6 +57,8 @@ class FindNoKmerCoverageScript extends QScript {
   qscript =>
 
   @Argument(shortName = "i", required = false, doc = "Intervals") var interval: String = _
+  @Argument(shortName = "xi", required = false, doc = "Excluded Intervals") var excludeInterval: String = _
+
   @Argument(shortName = "t", required = false, doc = "Names of bams to be placed in plots") var inputTag:List[String]=_
   @Argument(shortName = "b", required = true, doc = "List of BAM files") var bamList: List[File] = _
   @Argument(shortName = "r", required = false, doc = "Reference sequence") var referenceFile: File = new File("/humgen/1kg/reference/human_g1k_v37_decoy.fasta")
@@ -70,7 +72,7 @@ class FindNoKmerCoverageScript extends QScript {
   @ClassType(classOf[Int])
   @Argument(shortName = "mmq", required = false, doc = "minimum mapping quality(ies)") var minMappingQuality: List[Int] = List(20)
 
-  @Argument(shortName = "o", required = true, doc ="output base name") var outputBaseName:File = null
+  @Argument(shortName = "o", required = true, doc ="output base name") var outputBaseName:File = _
   @Input(shortName="amountOfN",required=false,doc="a file containing the number of N bases each contig has") var amountOfN:File=null
 
   @Argument(shortName = "baits", required = false, doc ="coding regions") var baitsfile:String = _
@@ -105,7 +107,7 @@ class FindNoKmerCoverageScript extends QScript {
       add(ciltr2)
     }
 
-    var outputsForR:List[String]=null
+    var outputs:List[String]=null
 
     val minlength=List(minKmerLength.length,minBaseQuality.length,minMappingQuality.length) reduce math.min
     val maxlength=List(minKmerLength.length,minBaseQuality.length,minMappingQuality.length) reduce math.max
@@ -121,8 +123,8 @@ class FindNoKmerCoverageScript extends QScript {
     }
 
     for( (mkl,mbq,mmq) <- listOfArgs) {
-      if (KeepBamsSeparate) outputsForR = bamList.map(x => process_bams(mkl, mbq,mmq, List(x)))
-      else outputsForR = List(process_bams(mkl ,mbq,mmq, bamList))
+      if (KeepBamsSeparate) outputs = bamList.map(x => process_bams(mkl, mbq,mmq, List(x)))
+      else outputs = List(process_bams(mkl ,mbq,mmq, bamList))
     }
 
 
@@ -130,7 +132,7 @@ class FindNoKmerCoverageScript extends QScript {
 
     val mp=new MakePlots()
     mp.rpath=qscript.rFilesPath
-    mp.input=outputsForR
+    mp.input=outputs
     mp.inputTags=inputTag
     mp.output=swapExt(outputBaseName,"",".plots.pdf")
     if(interval!=null) mp.interval=ciltr2.output
@@ -149,6 +151,9 @@ class FindNoKmerCoverageScript extends QScript {
     //Find No Coverage
     val fncbl = new FindNoKmerCoverageByLocus() with CommonArguments
     if(interval!=null) fncbl.intervalsString:+=interval
+
+    if(excludeInterval!=null) fncbl.excludeIntervalsString:+=excludeInterval
+
     fncbl.interval_set_rule=intervalSetRule
     fncbl.out = fncbl_output
     fncbl.mkl = mkl
@@ -202,7 +207,7 @@ class FindNoKmerCoverageScript extends QScript {
       add(cgrs)
 
     }
-    ciltr.output
+    qmi.out
   }
 
 
@@ -226,7 +231,7 @@ class FindNoKmerCoverageScript extends QScript {
     required("--sourceN",(if(inputTags!=null)inputTags else input.map(x=>x.toString)).mkString(",") ) +
     required("--centromereLocation", centromereLocation)+
     optional("--intervalList",interval)+
-    optional("--amountOfN",amountOfN)
+    optional("--amountOfN",amountOfN)+
     required("--output",output)
   }
 
