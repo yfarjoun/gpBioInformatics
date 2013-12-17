@@ -63,7 +63,7 @@ class ExtractSubPopulationMAF extends QScript {
 
     add(cv)
 
-    for (pop <- TargetPopulations) {
+    for (pop:File <- TargetPopulations) {
 
       val gps = new GetPopulationSamples
       gps.pop = pop
@@ -71,7 +71,7 @@ class ExtractSubPopulationMAF extends QScript {
       gps.SamplePanel = SamplePanel
       add(gps)
 
-      var sv = new SelectVariants
+      val sv = new SelectVariants with UNIVERSAL_GATK_ARGS
 
       sv.variant=cv.out
       sv.sample_file :+= gps.pop
