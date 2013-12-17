@@ -22,14 +22,14 @@ class ExtractSubPopulationMAF extends QScript {
   val scatterCount: Int = 25
 
   @Argument(shortName = "L", required = "false")
-  val interval: List[String] = _
+  val interval: String = _
 
   @Argument(shortName = "R", required = false)
   val reference: File = "/seq/references/Homo_sapiens_assembly19/v1/Homo_sapiens_assembly19.fasta"
 
   trait UNIVERSAL_GATK_ARGS extends CommandLineGATK {
     this.reference_sequence = reference
-    this.intervalsString = interval
+    this.intervalsString :+= interval
   }
 
   class GetPopulationSamples extends RScriptFunction {
