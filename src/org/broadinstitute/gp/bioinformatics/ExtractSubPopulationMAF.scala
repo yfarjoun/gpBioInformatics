@@ -7,25 +7,25 @@ import scala.annotation.tailrec
 
 class ExtractSubPopulationMAF extends QScript {
   @Input(shortName = "vcfSrcDir", doc = "The source directory of VCFs to process", required = false)
-  val vcfSrcDir: File = "/humgen/1kg/DCC/ftp/release/20110521/"
+  var vcfSrcDir: File = "/humgen/1kg/DCC/ftp/release/20110521/"
 
   @Output(shortName = "out", doc = "The output VCF", required = true)
-  val out: File = _
+  var out: File = _
 
   @Input(shortName = "panel", doc = "The file containing the population description of the different samples", required = false)
-  val SamplePanel: File = "/humgen/1kg/DCC/ftp/release/20110521/phase1_integrated_calls.20101123.ALL.panel"
+  var SamplePanel: File = "/humgen/1kg/DCC/ftp/release/20110521/phase1_integrated_calls.20101123.ALL.panel"
 
   @Argument(shortName = "pop", doc = "The list of target populations", required = false)
-  val TargetPopulations: List[String] = _
+  var TargetPopulations: List[String] = _
 
   @Argument(shortName = "scatterCount", doc = "The number of ways to scatter this job", required = false)
   val scatterCount: Int = 25
 
   @Argument(shortName = "L", required = "false")
-  val interval: String = _
+  var interval: String = _
 
   @Argument(shortName = "R", required = false)
-  val reference: File = "/seq/references/Homo_sapiens_assembly19/v1/Homo_sapiens_assembly19.fasta"
+  var reference: File = "/seq/references/Homo_sapiens_assembly19/v1/Homo_sapiens_assembly19.fasta"
 
   trait UNIVERSAL_GATK_ARGS extends CommandLineGATK {
     this.reference_sequence = reference
