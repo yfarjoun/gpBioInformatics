@@ -21,7 +21,7 @@ class ExtractSubPopulationMAF extends QScript {
   @Argument(shortName = "scatterCount", doc = "The number of ways to scatter this job", required = false)
   val scatterCount: Int = 25
 
-  @Argument(shortName = "L", required = true)
+  @Argument(shortName = "L", required = "false")
   val interval: List[String] = _
 
   @Argument(shortName = "R", required = false)
