@@ -42,7 +42,7 @@ class ExtractSubPopulationMAF extends QScript {
     lazy val rscript: String = s"""
         |read.table("$SamplePanel" ,col.names=c("SAMPLE","SUB.POP","POP","SEQUENCING.CENTER","SEQUENCING.CENTER.2"),fill=TRUE)->data
         |show(unique(data$$POP))
-        |write.table(file="$SampleList",subset(data,POP="AFR")$$SAMPLE,row,names=FALSE,quote=FALSE,col.names=FALSE)
+        |write.table(file="$SampleList",subset(data,POP="AFR")$$SAMPLE,row.names=FALSE,quote=FALSE,col.names=FALSE)
         """.stripMargin
 
   }
