@@ -63,11 +63,11 @@ class ExtractSubPopulationMAF extends QScript {
 
     add(cv)
 
-    for (pop:File <- TargetPopulations) {
+    for (pop:String <- TargetPopulations) {
 
       val gps = new GetPopulationSamples
       gps.pop = pop
-      gps.SampleList = "Sample." + pop + ".list"
+      gps.SampleList = "sample." + pop + ".list"
       gps.SamplePanel = SamplePanel
       add(gps)
 
