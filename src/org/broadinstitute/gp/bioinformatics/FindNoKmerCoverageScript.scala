@@ -91,11 +91,11 @@ class FindNoKmerCoverageScript extends QScript {
 
   def script() {
 
-    
+
     //write input interval as interval_list
     val mil=new MergeIntervalLists()
     val ciltr2 = new ConvertIntervalListToR(false)
-    if(interval!=null| excludeInterval!=null){
+    if(interval!=null){
       mil.reference_sequence=referenceFile
       mil.targetIntervalsString:+=interval
       mil.intervalsString:+=interval
