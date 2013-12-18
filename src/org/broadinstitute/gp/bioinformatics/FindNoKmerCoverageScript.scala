@@ -278,11 +278,11 @@ class FindNoKmerCoverageScript extends QScript {
       required("sed")+
         required("s/:/\t/; s/-/\t/ ; s/$/\t+\tinterval/g")+
         required(intervalList)+
-    required("|",escape=false)+
-      required("awk")+
-      required("BEGIN{OFS=\"\\t\"}{if($4==\"+\") { $6=$5; $5=$4; $4=$3; $3=$2 } ; $2=$2-1;print $0\"-\"NR}")+
-      required(">",escape = false)+
-      required(output)
+        required("|",escape=false)+
+        required("awk")+
+        required("BEGIN{OFS=\"\\t\"}{if($3==\"+\") { $5=$4; $4=$3; $3=$2 } ; $2=$2-1;print $0\"-\"NR}")+
+        required(">",escape = false)+
+        required(output)
   }
 
 
