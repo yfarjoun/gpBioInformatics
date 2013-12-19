@@ -30,7 +30,7 @@ class ExtractSubPopulationMAF extends QScript {
 
   trait UNIVERSAL_GATK_ARGS extends CommandLineGATK {
     this.reference_sequence = reference
-    this.intervalsString :+= intervals
+    this.intervalsString ++= intervals
   }
 
   class GetPopulationSamples extends RScriptFunction {
