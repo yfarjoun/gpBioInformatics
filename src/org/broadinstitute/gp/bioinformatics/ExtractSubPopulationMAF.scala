@@ -28,10 +28,6 @@ class ExtractSubPopulationMAF extends QScript {
   @Argument(shortName = "R", required = false)
   var reference: File = "/seq/references/Homo_sapiens_assembly19/v1/Homo_sapiens_assembly19.fasta"
 
-  trait UNIVERSAL_GATK_ARGS extends CommandLineGATK {
-    this.reference_sequence = reference
-    this.intervalsString ++= intervals
-  }
 
   class GetPopulationSamples extends RScriptFunction {
     @Argument var pop: String = _
@@ -56,6 +52,10 @@ class ExtractSubPopulationMAF extends QScript {
 
   def script() {
 
+    trait UNIVERSAL_GATK_ARGS extends CommandLineGATK {
+      reference_sequence = reference
+      intervalsString ++= intervals
+    }
 
     val cv = new CombineVariants with UNIVERSAL_GATK_ARGS
     cv.variant = findallVCF(List(vcfSrcDir))
