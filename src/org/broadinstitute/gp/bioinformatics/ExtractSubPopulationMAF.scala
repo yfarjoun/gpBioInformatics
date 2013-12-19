@@ -46,7 +46,7 @@ class ExtractSubPopulationMAF extends QScript {
   final def findallVCF(f: Seq[File]): Seq[File] = {
 
     val dirs=f.filter(_.isDirectory).filter(x=> !x.getName.startsWith("."))
-    println(dirs)
+    println("dir:"+dirs)
     (f++dirs.flatMap(_.listFiles())).filter(x=> x.isFile & (x.getName.endsWith(".vcf")| x.getName.endsWith(".vcf.gz")))
   }
 
@@ -58,7 +58,7 @@ class ExtractSubPopulationMAF extends QScript {
     cv.reference_sequence=reference
     cv.variant = findallVCF(List(vcfSrcDir))
     cv.out=swapExt(out,"vcf","subsetted.vcf")
-
+    cv.scatterCount=scatterCount
     println("intervals:"+cv.intervalsString)
 
     add(cv)
