@@ -61,6 +61,8 @@ class ExtractSubPopulationMAF extends QScript {
     cv.variant = findallVCF(List(vcfSrcDir))
     cv.out=swapExt(out,"vcf","subsetted.vcf")
 
+    println("intervals:"+intervals)
+
     add(cv)
 
     for (pop:String <- TargetPopulations) {
