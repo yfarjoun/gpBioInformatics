@@ -52,12 +52,10 @@ class ExtractSubPopulationMAF extends QScript {
 
   def script() {
 
-    trait UNIVERSAL_GATK_ARGS extends CommandLineGATK {
-      reference_sequence = reference
-      intervalsString ++= intervals
-    }
 
-    val cv = new CombineVariants with UNIVERSAL_GATK_ARGS
+    val cv = new CombineVariants
+    cv.intervalsString++=intervals
+    cv.reference_sequence=reference
     cv.variant = findallVCF(List(vcfSrcDir))
     cv.out=swapExt(out,"vcf","subsetted.vcf")
 
@@ -73,8 +71,9 @@ class ExtractSubPopulationMAF extends QScript {
       gps.SamplePanel = SamplePanel
       add(gps)
 
-      val sv = new SelectVariants with UNIVERSAL_GATK_ARGS
-
+      val sv = new SelectVariants
+      sv.reference_sequence=reference
+      sv.intervalsString++=intervals
       sv.variant=cv.out
       sv.sample_file :+= gps.pop
       sv.excludeNonVariants = false
