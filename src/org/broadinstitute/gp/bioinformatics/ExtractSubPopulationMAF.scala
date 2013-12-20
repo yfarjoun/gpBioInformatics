@@ -75,7 +75,7 @@ class ExtractSubPopulationMAF extends QScript {
       sv.reference_sequence=reference
       sv.intervalsString++=intervals
       sv.variant=cv.out
-      sv.sample_file :+= gps.pop
+      sv.sample_file :+= gps.SampleList
       sv.excludeNonVariants = false
       sv.keepOriginalAC = false
       sv.out = swapExt(out, "vcf", pop + ".vcf")

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="d17c68eb-a92b-4499-88c0-89e11f16825d" name="Default" comment="fixed recursive code">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala" />
+    <list default="true" readonly="true" id="d17c68eb-a92b-4499-88c0-89e11f16825d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gpBioInfo.iws" />
@@ -68,10 +66,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FindNoKmerCoverageScript.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FindNoKmerCoverageScript.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="108" column="46" selection-start="11830" selection-end="11830" vertical-scroll-proportion="0.6213184" vertical-offset="1177" max-vertical-offset="4485">
+            <state line="114" column="6" selection-start="12056" selection-end="12056" vertical-scroll-proportion="0.0" vertical-offset="1387" max-vertical-offset="4485">
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#8402#8447#0" expanded="true" />
@@ -80,13 +78,49 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ExtractSubPopulationMAF.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ExtractSubPopulationMAF.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="72" selection-start="1542" selection-end="1542" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="1410">
+            <state line="76" column="153" selection-start="2727" selection-end="2727" vertical-scroll-proportion="0.92975205" vertical-offset="465" max-vertical-offset="1425">
               <folding>
                 <element signature="e#47#92#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CombineVariants.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/gatk/CombineVariants.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="21" selection-start="76" selection-end="76" vertical-scroll-proportion="-0.6" vertical-offset="0" max-vertical-offset="1170">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TraversableLike.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/scala/collection/TraversableLike.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="6" selection-start="1164" selection-end="1164" vertical-scroll-proportion="-7.8" vertical-offset="0" max-vertical-offset="1050">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SeqLike.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/scala/collection/SeqLike.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="34" column="6" selection-start="3420" selection-end="3420" vertical-scroll-proportion="-15.84" vertical-offset="114" max-vertical-offset="840">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommandLineGATK.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/gatk/CommandLineGATK.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="39" selection-start="7606" selection-end="7618" vertical-scroll-proportion="-4.607843" vertical-offset="620" max-vertical-offset="3330">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -151,14 +185,14 @@
         <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/RScriptFunction.scala" />
         <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/CreateSyntheticContaminationScript.scala" />
         <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/RScriptFunction.scala" />
-        <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala" />
         <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala" />
+        <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="48" />
-    <option name="y" value="83" />
+    <option name="x" value="25" />
+    <option name="y" value="29" />
     <option name="width" value="2440" />
     <option name="height" value="1194" />
   </component>
@@ -252,7 +286,7 @@
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1200" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeOrder3" value="3" />
     <property name="recentsLimit" value="5" />
-    <property name="SearchEverywhereHistory" value="" />
+    <property name="SearchEverywhereHistory" value="ist" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -630,15 +664,55 @@
       <created>1387401351849</created>
       <updated>1387401351849</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="rolled back attempted change">
+      <created>1387407711143</created>
+      <updated>1387407711143</updated>
+    </task>
+    <task id="LOCAL-00016" summary="fixed a bug in the embedded rscript">
+      <created>1387409427082</created>
+      <updated>1387409427082</updated>
+    </task>
+    <task id="LOCAL-00017" summary="= is not ==">
+      <created>1387477634641</created>
+      <updated>1387477634642</updated>
+    </task>
+    <task id="LOCAL-00018" summary="capacity to have multiple intervals">
+      <created>1387478356247</created>
+      <updated>1387478356247</updated>
+    </task>
+    <task id="LOCAL-00019" summary="capacity to have multiple intervals&#10;">
+      <created>1387478767331</created>
+      <updated>1387478767331</updated>
+    </task>
+    <task id="LOCAL-00020" summary="dealing with scala crap">
+      <created>1387479448309</created>
+      <updated>1387479448309</updated>
+    </task>
+    <task id="LOCAL-00021" summary="dealing with scala crap&#10;">
+      <created>1387479643019</created>
+      <updated>1387479643019</updated>
+    </task>
+    <task id="LOCAL-00022" summary="dealing with scala crap&#10;">
+      <created>1387489678255</created>
+      <updated>1387489678255</updated>
+    </task>
+    <task id="LOCAL-00023" summary="dealing with scala crap&#10;">
+      <created>1387489849235</created>
+      <updated>1387489849235</updated>
+    </task>
+    <task id="LOCAL-00024" summary="pulling the scatterCount in">
+      <created>1387489958400</created>
+      <updated>1387489958400</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="48" y="83" width="2440" height="1194" extended-state="0" />
+    <frame x="25" y="29" width="2440" height="1194" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977778" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977778" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -647,7 +721,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977778" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977778" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977778" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -683,7 +757,15 @@
     <MESSAGE value="added quotes" />
     <MESSAGE value="fixed recursive code" />
     <MESSAGE value="fixed awk for creating bed file" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed awk for creating bed file" />
+    <MESSAGE value="rolled back attempted change" />
+    <MESSAGE value="fixed a bug in the embedded rscript" />
+    <MESSAGE value="= is not ==" />
+    <MESSAGE value="capacity to have multiple intervals" />
+    <MESSAGE value="capacity to have multiple intervals&#10;" />
+    <MESSAGE value="dealing with scala crap" />
+    <MESSAGE value="dealing with scala crap&#10;" />
+    <MESSAGE value="pulling the scatterCount in" />
+    <option name="LAST_COMMIT_MESSAGE" value="pulling the scatterCount in" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -851,11 +933,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/gatk/CommandLineGATK.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="6" selection-start="61" selection-end="61" vertical-scroll-proportion="0.014164306" vertical-offset="0" max-vertical-offset="3330" />
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/function/CommandLineFunction.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="6" selection-start="54" selection-end="54" vertical-scroll-proportion="0.013837638" vertical-offset="0" max-vertical-offset="1084">
@@ -891,21 +968,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala">
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="72" selection-start="1542" selection-end="1542" vertical-scroll-proportion="0.0" vertical-offset="555" max-vertical-offset="1410">
+        <state line="114" column="6" selection-start="12056" selection-end="12056" vertical-scroll-proportion="0.0" vertical-offset="1387" max-vertical-offset="4485">
           <folding>
-            <element signature="e#47#92#0" expanded="true" />
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#8402#8447#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala">
+    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/scala/collection/SeqLike.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="108" column="46" selection-start="11830" selection-end="11830" vertical-scroll-proportion="0.6213184" vertical-offset="1177" max-vertical-offset="4485">
+        <state line="34" column="6" selection-start="3420" selection-end="3420" vertical-scroll-proportion="-15.84" vertical-offset="114" max-vertical-offset="840">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/gatk/CommandLineGATK.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="39" selection-start="7606" selection-end="7618" vertical-scroll-proportion="-4.607843" vertical-offset="620" max-vertical-offset="3330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/scala/collection/TraversableLike.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="6" selection-start="1164" selection-end="1164" vertical-scroll-proportion="-7.8" vertical-offset="0" max-vertical-offset="1050">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/gatk/CombineVariants.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="21" selection-start="76" selection-end="76" vertical-scroll-proportion="-0.6" vertical-offset="0" max-vertical-offset="1170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="153" selection-start="2727" selection-end="2727" vertical-scroll-proportion="0.92975205" vertical-offset="465" max-vertical-offset="1425">
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#8402#8447#0" expanded="true" />
+            <element signature="e#47#92#0" expanded="true" />
           </folding>
         </state>
       </provider>
