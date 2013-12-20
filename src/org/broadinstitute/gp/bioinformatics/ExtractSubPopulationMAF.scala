@@ -43,6 +43,28 @@ class ExtractSubPopulationMAF extends QScript {
 
   }
 
+  class MakeSampleFreeVCF extends CommandLineFunction {
+    @Input var vcf: File = _
+    @Output var out: File = _
+
+    override def commandLine =
+      required("grep") +
+        required("^#") +
+        required(vcf) +
+        required("grep") +
+        required("-v", "^#") +
+        required(">", escape = false) +
+        required(out) +
+        required(";", escape = false) +
+        required(vcf) +
+        required("|", escape = false) +
+        required("cut") +
+        required("-f", "1-8") +
+        required(">>", escape = false) +
+        required(out)
+
+  }
+
   final def findallVCF(f: Seq[File]): Seq[File] = {
 
     val dirs=f.filter(_.isDirectory).filter(x=> !x.getName.startsWith("."))
@@ -79,8 +101,12 @@ class ExtractSubPopulationMAF extends QScript {
       sv.excludeNonVariants = false
       sv.keepOriginalAC = false
       sv.out = swapExt(out, "vcf", pop + ".vcf")
-
       add(sv)
+
+      val msfvcf = new MakeSampleFreeVCF
+      msfvcf.vcf=sv.out
+      msfvcf.out=swapExt(msfvcf.vcf,"vcf","sites.only.vcf")
+      add(msfvcf)
 
     }
 
