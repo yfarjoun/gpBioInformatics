@@ -49,13 +49,13 @@ class ExtractSubPopulationMAF extends QScript {
 
     override def commandLine =
       required("grep") +
-        required("^#") +
+        required("^##") +
         required(vcf) +
         required(">", escape = false) +
         required(out) +
         required(";", escape = false) +
         required("grep") +
-        required("-v", "^#") +
+        required("-v", "^##") +
         required(vcf) +
         required("|", escape = false) +
         required("cut") +
