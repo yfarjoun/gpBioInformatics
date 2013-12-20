@@ -51,18 +51,17 @@ class ExtractSubPopulationMAF extends QScript {
       required("grep") +
         required("^#") +
         required(vcf) +
-        required("grep") +
-        required("-v", "^#") +
         required(">", escape = false) +
         required(out) +
         required(";", escape = false) +
+        required("grep") +
+        required("-v", "^#") +
         required(vcf) +
         required("|", escape = false) +
         required("cut") +
         required("-f", "1-8") +
         required(">>", escape = false) +
         required(out)
-
   }
 
   final def findallVCF(f: Seq[File]): Seq[File] = {
