@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="d17c68eb-a92b-4499-88c0-89e11f16825d" name="Default" comment="Added a script that can be used to make calls to many projects at the same time (I use it for the fingerprinting recalibration)&#10;">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/GenotypeProjects.scala" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/GenotypeProjects.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gpBioInfo.iws" />
@@ -66,28 +68,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FindNoKmerCoverageScript.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="FindNoKmerCoverageScript.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="8" selection-start="8364" selection-end="8400" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3780">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GenotypeProjects.scala" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/GenotypeProjects.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="186" selection-start="640" selection-end="715" vertical-scroll-proportion="0.2892562" vertical-offset="0" max-vertical-offset="975">
+            <state line="244" column="26" selection-start="16508" selection-end="16508" vertical-scroll-proportion="0.33608815" vertical-offset="2711" max-vertical-offset="3795">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="GenotypeProjects.scala" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///Volumes/seq_tng/farjoun/FingerPrints/RecalibrateFluidigmCalls/GenotypeProjects.scala">
+        <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/GenotypeProjects.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="91" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
+            <state line="50" column="17" selection-start="1609" selection-end="1609" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="1080">
               <folding />
             </state>
           </provider>
@@ -96,7 +89,7 @@
       <file leaf-file-name="ExtractSubPopulationMAF.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="21" selection-start="1996" selection-end="1996" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="1800">
+            <state line="51" column="21" selection-start="1996" selection-end="1996" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1800">
               <folding />
             </state>
           </provider>
@@ -123,7 +116,7 @@
       <file leaf-file-name="CreateSyntheticContaminationScript.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/CreateSyntheticContaminationScript.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="277" column="5" selection-start="15915" selection-end="16172" vertical-scroll-proportion="0.0" vertical-offset="4155" max-vertical-offset="5505">
+            <state line="257" column="81" selection-start="15538" selection-end="15538" vertical-scroll-proportion="0.0" vertical-offset="3855" max-vertical-offset="5505">
               <folding />
             </state>
           </provider>
@@ -162,15 +155,15 @@
         <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/RScriptFunction.scala" />
         <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/CreateSyntheticContaminationScript.scala" />
         <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/RScriptFunction.scala" />
-        <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala" />
         <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala" />
         <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/GenotypeProjects.scala" />
+        <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="33" />
-    <option name="y" value="106" />
+    <option name="x" value="108" />
+    <option name="y" value="233" />
     <option name="width" value="2440" />
     <option name="height" value="1194" />
   </component>
@@ -201,11 +194,18 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gpBioInfo2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+          </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="gpBioInfo2" />
@@ -226,7 +226,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gpBioInfo2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bioinformatics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane />
       </pane>
     </panes>
   </component>
@@ -698,11 +719,15 @@
       <created>1389898119151</created>
       <updated>1389898119151</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="Added a script that can be used to make calls to many projects at the same time (I use it for the fingerprinting recalibration)&#10;">
+      <created>1389898160516</created>
+      <updated>1389898160516</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="33" y="106" width="2440" height="1194" extended-state="0" />
+    <frame x="108" y="233" width="2440" height="1194" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -715,7 +740,6 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977778" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977778" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -726,8 +750,9 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977778" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -762,7 +787,8 @@
     <MESSAGE value="added a site-only-vcf" />
     <MESSAGE value="added a site-only-vcf&#10;" />
     <MESSAGE value="Added a script that can be used to make calls to many projects at the same time (I use it for the fingerprinting recalibration)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added a script that can be used to make calls to many projects at the same time (I use it for the fingerprinting recalibration)" />
+    <MESSAGE value="Added a script that can be used to make calls to many projects at the same time (I use it for the fingerprinting recalibration)&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a script that can be used to make calls to many projects at the same time (I use it for the fingerprinting recalibration)&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -772,6 +798,55 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="234" column="4" selection-start="16060" selection-end="16060" vertical-scroll-proportion="0.0" vertical-offset="3510" max-vertical-offset="4500">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/GenotypeProjects.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="17" selection-start="1609" selection-end="1609" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="1080">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="21" selection-start="1996" selection-end="1996" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1800">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/gatk/CombineVariants.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="21" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/gatk/SelectVariants.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="93" selection-start="133" selection-end="148" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1830">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/CreateSyntheticContaminationScript.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="257" column="81" selection-start="15538" selection-end="15538" vertical-scroll-proportion="0.0" vertical-offset="3855" max-vertical-offset="5505">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/RScriptFunction.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="1" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="63" column="158" selection-start="9240" selection-end="9287" vertical-scroll-proportion="0.0" vertical-offset="742" max-vertical-offset="4485">
@@ -989,16 +1064,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/CreateSyntheticContaminationScript.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="277" column="5" selection-start="15915" selection-end="16172" vertical-scroll-proportion="0.0" vertical-offset="4155" max-vertical-offset="5505">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/utils/sam/GATKSAMRecord.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="104" column="83" selection-start="4866" selection-end="4866" vertical-scroll-proportion="0.6104651" vertical-offset="1125" max-vertical-offset="1845" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/CreateSyntheticContaminationScript.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="257" column="81" selection-start="15538" selection-end="15538" vertical-scroll-proportion="0.0" vertical-offset="3224" max-vertical-offset="4785">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala">
@@ -1008,23 +1083,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/function/RetryMemoryLimit.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="6" selection-start="54" selection-end="54" vertical-scroll-proportion="0.021398002" vertical-offset="0" max-vertical-offset="701" />
+      </provider>
+    </entry>
     <entry file="file:///Volumes/seq_tng/farjoun/FingerPrints/RecalibrateFluidigmCalls/GenotypeProjects.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="91" selection-start="621" selection-end="621" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="975">
+        <state line="17" column="91" selection-start="621" selection-end="621" vertical-scroll-proportion="0.22727273" vertical-offset="0" max-vertical-offset="975" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/GenotypeProjects.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="17" selection-start="1609" selection-end="1609" vertical-scroll-proportion="0.0" vertical-offset="189" max-vertical-offset="975">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="8" selection-start="8364" selection-end="8400" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3780">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/GenotypeProjects.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="186" selection-start="640" selection-end="715" vertical-scroll-proportion="0.2892562" vertical-offset="0" max-vertical-offset="975">
+        <state line="244" column="26" selection-start="16508" selection-end="16508" vertical-scroll-proportion="0.33608815" vertical-offset="2711" max-vertical-offset="3795">
           <folding />
         </state>
       </provider>

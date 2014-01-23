@@ -8,6 +8,7 @@ import org.broadinstitute.sting.gatk.walkers.genotyper.GenotypeLikelihoodsCalcul
 import org.broadinstitute.sting.gatk.walkers.genotyper.GenotypeLikelihoodsCalculationModel.GENOTYPING_MODE._
 
 import java.io.File
+import org.broadinstitute.sting.queue.function.RetryMemoryLimit
 
 /**
  *
@@ -29,7 +30,7 @@ class GenotypeProjects extends QScript {
     this.intervals :+= qscript.dbSNP
   }
 
-  class myUG extends UnifiedGenotyper with CommonArguments {
+  class myUG extends UnifiedGenotyper with CommonArguments with RetryMemoryLimit {
     this.dbsnp = qscript.dbSNP
     this.memoryLimit = 3.5
     this.gt_mode = GENOTYPE_GIVEN_ALLELES

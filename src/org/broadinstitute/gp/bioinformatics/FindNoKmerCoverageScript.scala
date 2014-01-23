@@ -79,7 +79,8 @@ class FindNoKmerCoverageScript extends QScript {
   @Argument(shortName = "targets", required = false, doc ="targets") var targetsfile:String = _
   @Argument(shortName = "gff", required = false, doc ="gene features") var genomeFeature:String = null // "/seq/references/Homo_sapiens_assembly19/v1/annotation/gencode.v12.annotation.patched_contigs.gff"
   @Argument(shortName="rpath",required=false,doc="the name of the path to where the R scripts for this qscript are stored") var rFilesPath:File="./private/R/scripts/org/broadinstitute/sting/techdev/NoCoverageScripts"
-  @Argument(shortName="centLoc",doc="A file documenting the location of various elements in the genome (from http://genome.ucsc.edu/cgi-bin/hgTables, choose table:gap)") var centromereLocation:File="CentromereLocation.txt"
+  @Argument(shortName="centLoc",doc="A file documenting the location of various elements in the genome (from http://genome.ucsc.edu/cgi-bin/hgTables, choose table:gap)",required = false)
+  var centromereLocation:File=null
 
   val tempIntervalFile="targetInterval.interval_list"
 
@@ -230,7 +231,7 @@ class FindNoKmerCoverageScript extends QScript {
  //   required("--args")+
     required("--sourceF",input.mkString(","))+
     required("--sourceN",(if(inputTags!=null)inputTags else input.map(x=>x.toString)).mkString(",") ) +
-    required("--centromereLocation", centromereLocation)+
+    optional("--centromereLocation", centromereLocation)+
     optional("--intervalList",interval)+
     optional("--amountOfN",amountOfN)+
     required("--output",output)
