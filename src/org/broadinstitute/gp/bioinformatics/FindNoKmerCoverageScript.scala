@@ -234,6 +234,7 @@ class FindNoKmerCoverageScript extends QScript {
     optional("--centromereLocation", centromereLocation)+
     optional("--intervalList",interval)+
     optional("--amountOfN",amountOfN)+
+    required("--dictionary",swapExt(referenceFile,".*",".dict"))
     required("--output",output)
   }
 
