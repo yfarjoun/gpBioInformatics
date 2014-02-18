@@ -56,17 +56,13 @@ class RealignAndFixBam extends QScript {
   qscript =>
 
 
-  @Input(shortName = "i", required = false, doc = "Input Bam to be fixed") var inputFile:File=_
+  @Input(shortName = "i", required = true, doc = "Input Bam to be fixed") var inputFile:File=_
 
   @Argument(shortName = "r", required = false, doc = "Reference sequence") var referenceFile: File = new File("/humgen/1kg/reference/human_g1k_v37_decoy.fasta")
 
   @Argument(shortName = "t", required = false, doc = "Thread count for bwa") var threads: Int = 1
 
   @Argument(shortName = "bq", required = false, doc = "Base quality to reset all the qualties to.") var baseQuality: Int = 40
-
-  @Output(shortName = "o", required = true, doc ="output base name") var outputBaseName:File = _
-
-
 
   class PicardCommandLineFunction extends JavaCommandLineFunction{
     var tempDir:List[File]=List("/local/scratch/","/seq/picardtemp3")
