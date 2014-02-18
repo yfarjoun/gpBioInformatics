@@ -75,14 +75,20 @@ class RealignAndFixBam extends QScript {
       jarFile=new File(jarPath,jarName)
     }
 
-    override def commandLine: String = super.commandLine + tempDir.map(x=>required("TMP_DIR=",x,"",escape = false)).reduce((x,y)=>x+y)
+    override protected def required(prefix: String, param: Any, suffix: String = "", spaceSeparated: Boolean = false,
+                                    escape: Boolean = true, format: String = "%s"): String =
+      super.required(prefix, param, suffix, spaceSeparated, escape, format)
+
+    override def commandLine: String = super.commandLine + repeat("TMP_DIR=",tempDir)
   }
 
   class SamToFastQ extends PicardCommandLineFunction{
     var bam:File=_
     var fasta:File=_
     jarName="SamToFastq.jar"
-    override def commandLine: String = super.commandLine + required("F=",bam,spaceSeparated = false)+required("O=",fasta,spaceSeparated = false)
+    override def commandLine: String = super.commandLine +
+      required("F=",bam,spaceSeparated = false)+
+      required("O=",fasta,spaceSeparated = false)
   }
 
   class ChangeBQ extends PicardCommandLineFunction{
