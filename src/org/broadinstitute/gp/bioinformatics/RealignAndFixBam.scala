@@ -75,22 +75,22 @@ class RealignAndFixBam extends QScript {
       jarFile=new File(jarPath,jarName)
     }
 
-    override protected def required(prefix: String, param: Any, suffix: String = "", spaceSeparated: Boolean = false,
+    protected def lRequired(prefix: String, param: Any, suffix: String = "", spaceSeparated: Boolean = false,
                                     escape: Boolean = true, format: String = "%s"): String =
       super.required(prefix, param, suffix, spaceSeparated, escape, format)
 
 
-    override protected def optional(prefix: String, param: Any, suffix: String = "", spaceSeparated: Boolean = false,
+    protected def lOptional(prefix: String, param: Any, suffix: String = "", spaceSeparated: Boolean = false,
                                     escape: Boolean = true, format: String = "%s"): String =
       super.optional(prefix, param, suffix, spaceSeparated, escape, format)
 
 
-    override protected def repeat(prefix: String, params: Traversable[_], suffix: String = "", separator: String = " ",
+    protected def lRepeat(prefix: String, params: Traversable[_], suffix: String = "", separator: String = " ",
                                   spaceSeparated: Boolean = false, escape: Boolean = true, format: String = "%s",
                                   formatPrefix: (String, Any) => String = (prefix, value) => prefix): String =
       super.repeat(prefix, params, suffix, separator, spaceSeparated, escape, format, formatPrefix)
 
-    override def commandLine: String = super.commandLine + repeat("TMP_DIR=",tempDir)
+    override def commandLine: String = super.commandLine + lRepeat("TMP_DIR=",tempDir)
   }
 
   class SamToFastQ extends PicardCommandLineFunction{
@@ -98,8 +98,8 @@ class RealignAndFixBam extends QScript {
     var fasta:File=_
     jarName="SamToFastq.jar"
     override def commandLine: String = super.commandLine +
-      required("F=",bam,spaceSeparated = false)+
-      required("O=",fasta,spaceSeparated = false)
+      lRequired("F=",bam)+
+      lRequired("O=",fasta)
   }
 
   class ChangeBQ extends PicardCommandLineFunction{
@@ -113,7 +113,7 @@ class RealignAndFixBam extends QScript {
     jarPath="/seq/tng/farjoun/temp/"
     jarName="ChangeSAMReadQuality.jar"
 
-    override def commandLine: String = super.commandLine + required("I=",in)+required("O=",out)
+    override def commandLine: String = super.commandLine + lRequired("I=",in)+lRequired("O=",out)
   }
 
   class AddSyntheticRG extends PicardCommandLineFunction{
@@ -125,13 +125,13 @@ class RealignAndFixBam extends QScript {
     var rgName:String="Synthetic"
     jarName="AddOrReplaceReadGroups.jar"
     override def commandLine: String = super.commandLine +
-      required("I=",in,"")+
-      required("O=",out)+
-      required("PL=",rgName)+
-      required("LB=",rgName)+
-      required("SM=",rgName)+
-      required("PU=",rgName)
-      required("SO=","unsorted")
+      lRequired("I=",in)+
+      lRequired("O=",out)+
+      lRequired("PL=",rgName)+
+      lRequired("LB=",rgName)+
+      lRequired("SM=",rgName)+
+      lRequired("PU=",rgName)
+      lRequired("SO=","unsorted")
   }
 
   class SortSam extends PicardCommandLineFunction{
@@ -140,9 +140,9 @@ class RealignAndFixBam extends QScript {
     @Output
     var out:File=_
     @Argument
-    var sortOrder="coordiante"
+    var sortOrder="coordinate"
     jarName="SortSam.jar"
-    override def commandLine: String = super.commandLine + required("I=",in)+required("O=",out) + required("SO=",sortOrder)
+    override def commandLine: String = super.commandLine + lRequired("I=",in)+lRequired("O=",out) + lRequired("SO=",sortOrder)
   }
 
   class BWAMem extends CommandLineFunction{
