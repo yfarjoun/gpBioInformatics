@@ -78,7 +78,7 @@ class RealignAndFixBam extends QScript {
       jarFile=new File(jarPath,jarName)
     }
 
-    override def commandLine: String = super.commandLine + tempDir.map(x=>required("TMP_DIR=",x,"",escape = false)).sum
+    override def commandLine: String = super.commandLine + tempDir.map(x=>required("TMP_DIR=",x,"",escape = false)).reduce((x,y)=>x+y)
   }
 
   class SamToFastQ extends PicardCommandLineFunction{
