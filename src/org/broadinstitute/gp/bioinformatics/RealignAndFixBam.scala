@@ -161,6 +161,9 @@ class RealignAndFixBam extends QScript {
     @Argument
     var threads:Option[Int]=None
 
+    this.memoryLimit=2048*threads
+
+
     def commandLine: String =  required("/seq/software/picard/current/3rd_party/bwa_mem/bwa")+
     required("mem")+
     required("-p")+
