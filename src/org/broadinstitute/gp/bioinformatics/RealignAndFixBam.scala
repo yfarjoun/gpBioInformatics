@@ -64,6 +64,7 @@ class RealignAndFixBam extends QScript {
 
   @Argument(shortName = "bq", required = false, doc = "Base quality to reset all the qualties to.") var baseQuality: Int = 40
 
+
   class PicardCommandLineFunction extends JavaCommandLineFunction{
     var tempDir:List[File]=List("/local/scratch/","/seq/picardtemp3")
     var jarPath:File="/seq/software/picard/current/bin"
@@ -199,6 +200,6 @@ class RealignAndFixBam extends QScript {
 
     var ib=new IndexSam()
     ib.in=sb.out
-
+    add(sb)
   }
 }
