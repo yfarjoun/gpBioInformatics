@@ -79,6 +79,17 @@ class RealignAndFixBam extends QScript {
                                     escape: Boolean = true, format: String = "%s"): String =
       super.required(prefix, param, suffix, spaceSeparated, escape, format)
 
+
+    override protected def optional(prefix: String, param: Any, suffix: String = "", spaceSeparated: Boolean = false,
+                                    escape: Boolean = true, format: String = "%s"): String =
+      super.optional(prefix, param, suffix, spaceSeparated, escape, format)
+
+
+    override protected def repeat(prefix: String, params: Traversable[_], suffix: String = "", separator: String = " ",
+                                  spaceSeparated: Boolean = false, escape: Boolean = true, format: String = "%s",
+                                  formatPrefix: (String, Any) => String = (prefix, value) => prefix): String =
+      super.repeat(prefix, params, suffix, separator, spaceSeparated, escape, format, formatPrefix)
+
     override def commandLine: String = super.commandLine + repeat("TMP_DIR=",tempDir)
   }
 
@@ -114,13 +125,13 @@ class RealignAndFixBam extends QScript {
     var rgName:String="Synthetic"
     jarName="AddOrReplaceReadGroups.jar"
     override def commandLine: String = super.commandLine +
-      required("I=",in,"",escape = false)+
+      required("I=",in,"")+
       required("O=",out)+
-      required("PL=",rgName,"",escape = false)+
-      required("LB=",rgName,"",escape = false)+
-      required("SM=",rgName,"",escape = false)+
-      required("PU=",rgName,"",escape = false)
-      required("SO=","unsorted","",escape = false)
+      required("PL=",rgName)+
+      required("LB=",rgName)+
+      required("SM=",rgName)+
+      required("PU=",rgName)
+      required("SO=","unsorted")
   }
 
   class SortSam extends PicardCommandLineFunction{
