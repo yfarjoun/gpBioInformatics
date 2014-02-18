@@ -82,7 +82,7 @@ class RealignAndFixBam extends QScript {
     var bam:File=_
     var fasta:File=_
     jarName="SamToFastq.jar"
-    override def commandLine: String = super.commandLine + required("F=",bam)+required("O=",fasta)
+    override def commandLine: String = super.commandLine + required("F=",bam,spaceSeparated = false)+required("O=",fasta,spaceSeparated = false)
   }
 
   class ChangeBQ extends PicardCommandLineFunction{
