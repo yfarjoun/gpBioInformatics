@@ -84,7 +84,7 @@ class RealignAndFixBam extends QScript {
   class SamToFastQ extends PicardCommandLineFunction{
     var bam:File=_
     var fasta:File=_
-    override var jarName:String="SamToFastq.jar"
+    jarName="SamToFastq.jar"
     override def commandLine: String = super.commandLine + required("F=",bam)+required("O=",fasta)
   }
 
@@ -96,8 +96,9 @@ class RealignAndFixBam extends QScript {
     @Argument
     var bq:Int=0
 
-    override var jarPath:File="/seq/tng/farjoun/temp/"
-    override var jarName:File="ChangeSAMReadQuality.jar"
+    jarPath="/seq/tng/farjoun/temp/"
+    jarName="ChangeSAMReadQuality.jar"
+
     override def commandLine: String = super.commandLine + required("I=",in)+required("O=",out)
   }
 
@@ -108,7 +109,7 @@ class RealignAndFixBam extends QScript {
     var out:File=_
     @Argument
     var rgName:String="Synthetic"
-    override var jarName:File="AddOrReplaceReadGroups.jar"
+    jarName="AddOrReplaceReadGroups.jar"
     override def commandLine: String = super.commandLine +
       required("I=",in,"",escape = false)+
       required("O=",out)+
@@ -126,7 +127,7 @@ class RealignAndFixBam extends QScript {
     var out:File=_
     @Argument
     var sortOrder="coordiante"
-    override var jarName:File="SortSam.jar"
+    jarName="SortSam.jar"
     override def commandLine: String = super.commandLine + required("I=",in)+required("O=",out) + required("SO=",sortOrder)
   }
 
