@@ -57,7 +57,7 @@ class RealignAndFixBam extends QScript {
 
 
   @Input(shortName = "i", required = true, doc = "Input Bam to be fixed") var inputFile:File=_
-  @Output var output: File = _
+  @Output(required = false) var output:File = _
 
   @Argument(shortName = "r", required = false, doc = "Reference sequence") var referenceFile: File = new File("/humgen/1kg/reference/human_g1k_v37_decoy.fasta")
 
@@ -220,9 +220,11 @@ class RealignAndFixBam extends QScript {
 
     var ib=new IndexSam()
     ib.in=sb.out
+    ib.freezeFieldValues()
+    output=ib.index
+
     add(sb)
 
-    output=ib.index
 
   }
 }
