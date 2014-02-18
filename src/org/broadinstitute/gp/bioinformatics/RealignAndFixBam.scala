@@ -97,8 +97,11 @@ class RealignAndFixBam extends QScript {
   }
 
   class SamToFastQ extends PicardCommandLineFunction{
+    @Input
     var bam:File=_
+    @Output
     var fasta:File=_
+
     jarName="SamToFastq.jar"
     override def commandLine: String = super.commandLine +
       lRequired("I=",bam)+
