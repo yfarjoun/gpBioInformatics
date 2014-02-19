@@ -73,6 +73,8 @@ class RealignAndFixBam extends QScript {
     var jarPath:File="/seq/software/picard/current/bin"
     var jarName:String=null
 
+    this.memoryLimit=2048
+
     override def freezeFieldValues(): Unit = {
       super.freezeFieldValues()
       jarFile=new File(jarPath,jarName)
@@ -119,7 +121,11 @@ class RealignAndFixBam extends QScript {
     @Argument
     var threads:Option[Int]=None
 
-    this.memoryLimit=2048*threads
+    if ( hasValue(threads) )
+      this.memoryLimit=2048*threads
+    else
+      this.memoryLimit=2048
+    this.jobNativeArgs:+="-pe smp_pe "+threads
 
 
 
@@ -160,6 +166,7 @@ class RealignAndFixBam extends QScript {
     @Argument
     var rgName:String="Synthetic"
     jarName="AddOrReplaceReadGroups.jar"
+
     override def commandLine: String = super.commandLine +
       lRequired("I=",in)+
       lRequired("O=",out)+
@@ -191,8 +198,11 @@ class RealignAndFixBam extends QScript {
     @Argument
     var threads:Option[Int]=None
 
-    this.memoryLimit=2048*threads
-
+    if ( hasValue(threads) )
+      this.memoryLimit=2048*threads
+    else
+      this.memoryLimit=2048
+    this.jobNativeArgs:+="-pe smp_pe "+threads
 
     def commandLine: String =  required("/seq/software/picard/current/3rd_party/bwa_mem/bwa")+
     required("mem")+
