@@ -63,7 +63,7 @@ class RealignAndFixBam extends QScript {
 
   @Argument(shortName = "t", required = false, doc = "Thread count for bwa") var threads: Int = _
 
-  @Argument(shortName = "bq", required = false, doc = "Base quality to reset all the qualties to.") var baseQuality: Int = 40
+  @Argument(shortName = "bq", required = false, doc = "Base quality to reset all the qualities to.") var baseQuality: Int = 40
 
 
 
@@ -80,22 +80,7 @@ class RealignAndFixBam extends QScript {
       jarFile=new File(jarPath,jarName)
     }
 
-    protected def lRequired(prefix: String, param: Any, suffix: String = "", spaceSeparated: Boolean = false,
-                                    escape: Boolean = true, format: String = "%s"): String =
-      super.required(prefix, param, suffix, spaceSeparated, escape, format)
-
-
-    protected def lOptional(prefix: String, param: Any, suffix: String = "", spaceSeparated: Boolean = false,
-                                    escape: Boolean = true, format: String = "%s"): String =
-      super.optional(prefix, param, suffix, spaceSeparated, escape, format)
-
-
-    protected def lRepeat(prefix: String, params: Traversable[_], suffix: String = "", separator: String = " ",
-                                  spaceSeparated: Boolean = false, escape: Boolean = true, format: String = "%s",
-                                  formatPrefix: (String, Any) => String = (prefix, value) => prefix): String =
-      super.repeat(prefix, params, suffix, separator, spaceSeparated, escape, format, formatPrefix)
-
-    override def commandLine: String = super.commandLine + lRepeat("TMP_DIR=",tempDir)
+    override def commandLine: String = super.commandLine + repeat("TMP_DIR=",tempDir)
   }
 
   class SamToFastQ extends PicardCommandLineFunction{
@@ -106,8 +91,8 @@ class RealignAndFixBam extends QScript {
 
     jarName="SamToFastq.jar"
     override def commandLine: String = super.commandLine +
-      lRequired("I=",bam)+
-      lRequired("F=",fasta)
+      required("I=",bam)+
+      required("F=",fasta)
   }
 
   class SamToFastQAndBWAMem extends PicardCommandLineFunction{
@@ -131,8 +116,8 @@ class RealignAndFixBam extends QScript {
 
     jarName="SamToFastq.jar"
     override def commandLine: String = super.commandLine +
-      lRequired("I=",in)+
-      lRequired("F=","/dev/stdout")  + required("|",escape = false)+
+      required("I=",in)+
+      required("F=","/dev/stdout")  + required("|",escape = false)+
       required("/seq/software/picard/current/3rd_party/bwa_mem/bwa","mem")+
       required("-p")+
       optional("-t",threads)+
@@ -155,7 +140,7 @@ class RealignAndFixBam extends QScript {
     jarPath="/seq/tng/farjoun/temp/"
     jarName="ChangeSAMReadQuality.jar"
 
-    override def commandLine: String = super.commandLine + lRequired("I=",in)+lRequired("O=",out) + lRequired("BQ=",bq)
+    override def commandLine: String = super.commandLine + required("I=",in)+required("O=",out) + required("BQ=",bq)
   }
 
   class AddSyntheticRGAndSort extends PicardCommandLineFunction{
@@ -168,13 +153,13 @@ class RealignAndFixBam extends QScript {
     jarName="AddOrReplaceReadGroups.jar"
 
     override def commandLine: String = super.commandLine +
-      lRequired("I=",in)+
-      lRequired("O=",out)+
-      lRequired("PL=",rgName)+
-      lRequired("LB=",rgName)+
-      lRequired("SM=",rgName)+
-      lRequired("PU=",rgName)
-      lRequired("SO=","coordiante")
+      required("I=",in)+
+      required("O=",out)+
+      required("PL=",rgName)+
+      required("LB=",rgName)+
+      required("SM=",rgName)+
+      required("PU=",rgName)
+      required("SO=","coordiante")
   }
 
   class SortSam extends PicardCommandLineFunction{
@@ -185,7 +170,7 @@ class RealignAndFixBam extends QScript {
     @Argument
     var sortOrder="coordinate"
     jarName="SortSam.jar"
-    override def commandLine: String = super.commandLine + lRequired("I=",in)+lRequired("O=",out) + lRequired("SO=",sortOrder)
+    override def commandLine: String = super.commandLine + required("I=",in)+required("O=",out) + required("SO=",sortOrder)
   }
 
   class BWAMem extends CommandLineFunction{
