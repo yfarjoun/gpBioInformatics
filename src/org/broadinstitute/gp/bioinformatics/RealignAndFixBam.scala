@@ -156,8 +156,8 @@ class RealignAndFixBam extends QScript {
       required("PL=",rgName)+
       required("LB=",rgName)+
       required("SM=",rgName)+
-      required("PU=",rgName)
-      required("SO=","coordiante")
+      required("PU=",rgName)+
+      required("SO=","coordinate")
   }
 
   class SortSam extends PicardCommandLineFunction{
