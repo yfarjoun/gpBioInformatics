@@ -61,7 +61,7 @@ class RealignAndFixBam extends QScript {
 
   @Argument(shortName = "r", required = false, doc = "Reference sequence") var referenceFile: File = new File("/humgen/1kg/reference/human_g1k_v37_decoy.fasta")
 
-  @Argument(shortName = "t", required = false, doc = "Thread count for bwa") var threads: Int = 1
+  @Argument(shortName = "t", required = false, doc = "Thread count for bwa") var threads: Int = _
 
   @Argument(shortName = "bq", required = false, doc = "Base quality to reset all the qualties to.") var baseQuality: Int = 40
 
@@ -152,7 +152,7 @@ class RealignAndFixBam extends QScript {
     override def commandLine: String = super.commandLine + lRequired("I=",in)+lRequired("O=",out) + lRequired("BQ=",bq)
   }
 
-  class AddSyntheticRG extends PicardCommandLineFunction{
+  class AddSyntheticRGAndSort extends PicardCommandLineFunction{
     @Input
     var in:File=_
     @Output
@@ -167,7 +167,7 @@ class RealignAndFixBam extends QScript {
       lRequired("LB=",rgName)+
       lRequired("SM=",rgName)+
       lRequired("PU=",rgName)
-      lRequired("SO=","unsorted")
+      lRequired("SO=","coordiante")
   }
 
   class SortSam extends PicardCommandLineFunction{
@@ -252,18 +252,18 @@ class RealignAndFixBam extends QScript {
     cbq.bq=this.baseQuality
     add(cbq)
     
-    var asrg=new AddSyntheticRG()
+    var asrg=new AddSyntheticRGAndSort()
     asrg.in=cbq.out
-    asrg.out=swapExt(asrg.in,".bam",".modRG.bam")
+    asrg.out=swapExt(asrg.in,".bam",".modRG.sorted.bam")
     add(asrg)
 
-    var sb=new SortSam()
-    sb.in=asrg.out
-    sb.out=swapExt(sb.in,".bam",".sorted.bam")
-    add(sb)
+//    var sb=new SortSam()
+//    sb.in=asrg.out
+//    sb.out=swapExt(sb.in,".bam",".sorted.bam")
+//    add(sb)
 
     var ib=new IndexSam()
-    ib.in=sb.out
+    ib.in=asrg.out
     add(ib)
 
 
