@@ -105,9 +105,6 @@ class RealignAndFixBam extends QScript {
 
     @Argument(shortName = "r", required = false, doc = "Reference sequence")
     var referenceFile: File = new File("/humgen/1kg/reference/human_g1k_v37_decoy.fasta")
-    @Argument(required = false)
-    @ClassType(classOf[Int])
-    var threads: Option[Int] = _
 
     if (hasValue(threads)) {
       this.memoryLimit = 2 * threads
@@ -137,13 +134,11 @@ class RealignAndFixBam extends QScript {
     var in:File=_
     @Output
     var out:File=_
-    @Argument
-    var bq:Int=_
 
     jarPath="/seq/tng/farjoun/temp/"
     jarName="ChangeSAMReadQuality.jar"
 
-    override def commandLine: String = super.commandLine + required("I=",in)+required("O=",out) + required("BQ=",bq)
+    override def commandLine: String = super.commandLine + required("I=",in)+required("O=",out) + required("BQ=",baseQuality)
   }
 
   class AddSyntheticRGAndSort extends PicardCommandLineFunction{
@@ -181,11 +176,6 @@ class RealignAndFixBam extends QScript {
     var in:File=_
     @Output
     var out:File=_
-    @Argument(shortName = "r", required = false, doc = "Reference sequence")
-    var referenceFile: File = new File("/humgen/1kg/reference/human_g1k_v37_decoy.fasta")
-    @ClassType(classOf[Int])
-    @Argument(required=false)
-    var threads:Option[Int]=_
 
     if (hasValue(threads)) {
       this.memoryLimit = 2 * threads
@@ -234,14 +224,12 @@ class RealignAndFixBam extends QScript {
     var stfabm=new SamToFastQAndBWAMem()
     stfabm.in=inputFile
     stfabm.out=swapExt(stfabm.in,".bam",".aligned.bam")
-    stfabm.threads=this.threads
     stfabm.referenceFile= referenceFile
     add(stfabm)
 
     var cbq=new ChangeBQ()
     cbq.in=stfabm.out
     cbq.out=swapExt(cbq.in,".bam",".modBQ.bam")
-    cbq.bq=this.baseQuality
     add(cbq)
     
     var asrg=new AddSyntheticRGAndSort()
