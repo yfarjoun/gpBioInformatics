@@ -61,7 +61,7 @@ class RealignAndFixBam extends QScript {
 
   @Argument(shortName = "r", required = false, doc = "Reference sequence") var referenceFile: File = new File("/humgen/1kg/reference/human_g1k_v37_decoy.fasta")
 
-  @Argument(shortName = "t", required = false, doc = "Thread count for bwa") var threads: Int = _
+  @Argument(shortName = "t", required = false, doc = "Thread count for bwa") var threads: Option[Int] = _
 
   @Argument(shortName = "bq", required = false, doc = "Base quality to reset all the qualities to.") var baseQuality: Int = 40
 
@@ -95,38 +95,38 @@ class RealignAndFixBam extends QScript {
       required("F=",fasta)
   }
 
-  class SamToFastQAndBWAMem extends PicardCommandLineFunction{
+  class SamToFastQAndBWAMem extends PicardCommandLineFunction {
     @Input
-    var in:File=_
+    var in: File = _
     @Output
-    var out:File=_
+    var out: File = _
 
     @Argument(shortName = "r", required = false, doc = "Reference sequence")
     var referenceFile: File = new File("/humgen/1kg/reference/human_g1k_v37_decoy.fasta")
-    @Argument(required=false)
-    var threads:Int=_
+    @Argument(required = false)
+    var threads: Option[Int] = _
 
-    if ( hasValue(threads) )
-      this.memoryLimit=2*threads
-    else
-      this.memoryLimit=2
-    this.jobNativeArgs:+="-pe smp_pe "+threads
+    if (hasValue(threads)) {
+      this.memoryLimit = 2 * threads
+      this.jobNativeArgs :+= "-pe smp_pe " + threads
+    } else
+      this.memoryLimit = 2
 
 
 
-    jarName="SamToFastq.jar"
+    jarName = "SamToFastq.jar"
+
     override def commandLine: String = super.commandLine +
-      required("I=",in)+
-      required("F=","/dev/stdout")  + required("|",escape = false)+
-      required("/seq/software/picard/current/3rd_party/bwa_mem/bwa","mem")+
-      required("-p")+
-      optional("-t",threads)+
-      required(referenceFile)+
-      required("/dev/stdin")+
-      required(">",escape = false)+
+      required("I=", in) +
+      required("F=", "/dev/stdout") + required("|", escape = false) +
+      required("/seq/software/picard/current/3rd_party/bwa_mem/bwa", "mem") +
+      required("-p") +
+      optional("-t", threads) +
+      required(referenceFile) +
+      required("/dev/stdin") +
+      required(">", escape = false) +
       required(out)
   }
-
 
 
   class ChangeBQ extends PicardCommandLineFunction{
@@ -181,13 +181,14 @@ class RealignAndFixBam extends QScript {
     @Argument(shortName = "r", required = false, doc = "Reference sequence")
     var referenceFile: File = new File("/humgen/1kg/reference/human_g1k_v37_decoy.fasta")
     @Argument(required=false)
-    var threads:Int=_
+    var threads:Option[Int]=_
 
-    if ( hasValue(threads) )
-      this.memoryLimit=2048*threads
+    if (hasValue(threads)) {
+      this.memoryLimit = 2 * threads
+      this.jobNativeArgs :+= "-pe smp_pe " + threads
+    }
     else
-      this.memoryLimit=2048
-    this.jobNativeArgs:+="-pe smp_pe "+threads
+      this.memoryLimit = 2
 
     def commandLine: String =  required("/seq/software/picard/current/3rd_party/bwa_mem/bwa")+
     required("mem")+
