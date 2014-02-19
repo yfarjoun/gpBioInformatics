@@ -108,6 +108,36 @@ class RealignAndFixBam extends QScript {
       lRequired("F=",fasta)
   }
 
+  class SamToFastQAndBWAMem extends PicardCommandLineFunction{
+    @Input
+    var in:File=_
+    @Output
+    var out:File=_
+
+    @Argument(shortName = "r", required = false, doc = "Reference sequence")
+    var referenceFile: File = new File("/humgen/1kg/reference/human_g1k_v37_decoy.fasta")
+    @Argument
+    var threads:Option[Int]=None
+
+    this.memoryLimit=2048*threads
+
+
+
+    jarName="SamToFastq.jar"
+    override def commandLine: String = super.commandLine +
+      lRequired("I=",in)+
+      lRequired("F=","/dev/stdout")  + required("|",escape = false)+
+      required("/seq/software/picard/current/3rd_party/bwa_mem/bwa","mem")+
+      required("-p")+
+      optional("-t",threads)+
+      required(referenceFile)+
+      required("/dev/stdin")+
+      required(">",escape = false)+
+      required(out)
+  }
+
+
+
   class ChangeBQ extends PicardCommandLineFunction{
     @Input
     var in:File=_
@@ -197,19 +227,26 @@ class RealignAndFixBam extends QScript {
 
   def script() {
 
-    var stf=new SamToFastQ()
-    stf.bam=inputFile
-    stf.fasta=swapExt(inputFile,".bam",".fasta")
-    add(stf)
-    
-    var  bwa=new BWAMem()
-    bwa.in=stf.fasta
-    bwa.threads=this.threads
-    bwa.out=swapExt(bwa.in,".fasta",".aligned.bam")
-    add(bwa)
-    
+
+//    var stf=new SamToFastQ()
+//    stf.bam=inputFile
+//    stf.fasta=swapExt(inputFile,".bam",".fasta")
+//    add(stf)
+//
+//    var  bwa=new BWAMem()
+//    bwa.in=stf.fasta
+//    bwa.threads=this.threads
+//    bwa.out=swapExt(bwa.in,".fasta",".aligned.bam")
+//    add(bwa)
+//
+    var stfabm=new SamToFastQAndBWAMem()
+    stfabm.in=inputFile
+    stfabm.out=swapExt(stfabm.in,".bam",".aligned.bam")
+    stfabm.threads=this.threads
+    stfabm.referenceFile= referenceFile
+
     var cbq=new ChangeBQ()
-    cbq.in=bwa.out
+    cbq.in=stfabm.out
     cbq.out=swapExt(cbq.in,".bam",".modBQ.bam")
     cbq.bq=this.baseQuality
     add(cbq)
