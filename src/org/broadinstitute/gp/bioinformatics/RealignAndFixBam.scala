@@ -68,8 +68,6 @@ class RealignAndFixBam extends QScript {
   @Argument(shortName = "bq", required = false, doc = "Base quality to reset all the qualities to.") var baseQuality: Int = 40
 
 
-
-
   class PicardCommandLineFunction extends JavaCommandLineFunction{
     var tempDir:List[File]=List("/local/scratch/","/seq/picardtemp3")
     var jarPath:File="/seq/software/picard/current/bin"
@@ -160,39 +158,7 @@ class RealignAndFixBam extends QScript {
       required("SO=","coordinate")
   }
 
-  class SortSam extends PicardCommandLineFunction{
-    @Input
-    var in:File=_
-    @Output
-    var out:File=_
-    @Argument
-    var sortOrder="coordinate"
-    jarName="SortSam.jar"
-    override def commandLine: String = super.commandLine + required("I=",in)+required("O=",out) + required("SO=",sortOrder)
-  }
 
-  class BWAMem extends CommandLineFunction{
-    @Input
-    var in:File=_
-    @Output
-    var out:File=_
-
-    if (hasValue(threads)) {
-      this.memoryLimit = 2 * threads
-      this.jobNativeArgs :+= "-pe smp_pe " + threads
-    }
-    else
-      this.memoryLimit = 2
-
-    def commandLine: String =  required("/seq/software/picard/current/3rd_party/bwa_mem/bwa")+
-    required("mem")+
-    required("-p")+
-    optional("-t",threads)+
-    required(referenceFile)+
-    required(in)+
-    required(">",escape = false)+
-    required(out)
-  }
 
   class IndexSam(@Input var in:File) extends CommandLineFunction{
 
@@ -205,22 +171,9 @@ class RealignAndFixBam extends QScript {
       required(index)
   }
 
-
-
   def script() {
 
 
-//    var stf=new SamToFastQ()
-//    stf.bam=inputFile
-//    stf.fasta=swapExt(inputFile,".bam",".fasta")
-//    add(stf)
-//
-//    var  bwa=new BWAMem()
-//    bwa.in=stf.fasta
-//    bwa.threads=this.threads
-//    bwa.out=swapExt(bwa.in,".fasta",".aligned.bam")
-//    add(bwa)
-//
     var stfabm=new SamToFastQAndBWAMem()
     stfabm.in=inputFile
     stfabm.out=swapExt(stfabm.in,".bam",".aligned.bam")
@@ -236,11 +189,6 @@ class RealignAndFixBam extends QScript {
     asrg.in=cbq.out
     asrg.out=swapExt(asrg.in,".bam",".modRG.sorted.bam")
     add(asrg)
-
-//    var sb=new SortSam()
-//    sb.in=asrg.out
-//    sb.out=swapExt(sb.in,".bam",".sorted.bam")
-//    add(sb)
 
     var ib=new IndexSam(asrg.out)
     add(ib)
