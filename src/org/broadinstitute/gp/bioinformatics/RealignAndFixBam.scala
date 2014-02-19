@@ -244,6 +244,7 @@ class RealignAndFixBam extends QScript {
     stfabm.out=swapExt(stfabm.in,".bam",".aligned.bam")
     stfabm.threads=this.threads
     stfabm.referenceFile= referenceFile
+    add(stfabm)
 
     var cbq=new ChangeBQ()
     cbq.in=stfabm.out
