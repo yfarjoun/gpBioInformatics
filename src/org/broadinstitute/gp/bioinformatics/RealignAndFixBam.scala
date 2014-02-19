@@ -118,8 +118,8 @@ class RealignAndFixBam extends QScript {
 
     @Argument(shortName = "r", required = false, doc = "Reference sequence")
     var referenceFile: File = new File("/humgen/1kg/reference/human_g1k_v37_decoy.fasta")
-    @Argument
-    var threads:Option[Int]=None
+    @Argument(required=false)
+    var threads:Int=_
 
     if ( hasValue(threads) )
       this.memoryLimit=2048*threads
@@ -150,7 +150,7 @@ class RealignAndFixBam extends QScript {
     @Output
     var out:File=_
     @Argument
-    var bq:Int=0
+    var bq:Int=_
 
     jarPath="/seq/tng/farjoun/temp/"
     jarName="ChangeSAMReadQuality.jar"
@@ -195,8 +195,8 @@ class RealignAndFixBam extends QScript {
     var out:File=_
     @Argument(shortName = "r", required = false, doc = "Reference sequence")
     var referenceFile: File = new File("/humgen/1kg/reference/human_g1k_v37_decoy.fasta")
-    @Argument
-    var threads:Option[Int]=None
+    @Argument(required=false)
+    var threads:Int=_
 
     if ( hasValue(threads) )
       this.memoryLimit=2048*threads
