@@ -214,18 +214,10 @@ class RealignAndFixBam extends QScript {
     required(out)
   }
 
-  class IndexSam extends CommandLineFunction{
-    @Input
-    var in:File=_
+  class IndexSam(@Input var in:File) extends CommandLineFunction{
 
     @Output(doc="BAM file index to output", required=false)
-    var index: File = _
-
-    override def freezeFieldValues() {
-      super.freezeFieldValues()
-      if (index == null && in != null)
-        index = new File(in.getPath + ".bai")
-    }
+    var index: File =  new File(in.getPath + ".bai")
 
     def commandLine = required("samtools") +
       required("index") +
@@ -272,8 +264,7 @@ class RealignAndFixBam extends QScript {
 //    sb.out=swapExt(sb.in,".bam",".sorted.bam")
 //    add(sb)
 
-    var ib=new IndexSam()
-    ib.in=asrg.out
+    var ib=new IndexSam(asrg.out)
     add(ib)
 
 
