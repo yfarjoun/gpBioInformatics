@@ -73,7 +73,7 @@ class RealignAndFixBam extends QScript {
     var jarPath:File="/seq/software/picard/current/bin"
     var jarName:String=null
 
-    this.memoryLimit=2048
+    this.memoryLimit=2
 
     override def freezeFieldValues(): Unit = {
       super.freezeFieldValues()
@@ -107,9 +107,9 @@ class RealignAndFixBam extends QScript {
     var threads:Int=_
 
     if ( hasValue(threads) )
-      this.memoryLimit=2048*threads
+      this.memoryLimit=2*threads
     else
-      this.memoryLimit=2048
+      this.memoryLimit=2
     this.jobNativeArgs:+="-pe smp_pe "+threads
 
 
