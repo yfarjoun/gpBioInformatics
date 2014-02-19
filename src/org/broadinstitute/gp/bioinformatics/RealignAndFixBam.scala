@@ -50,6 +50,7 @@ import org.broadinstitute.sting.queue.QScript
 import org.broadinstitute.sting.queue.function.JavaCommandLineFunction
 import org.broadinstitute.sting.commandline
 import org.broadinstitute.sting.queue.extensions.picard.AddOrReplaceReadGroups
+import org.broadinstitute.sting.commandline.ClassType
 
 
 class RealignAndFixBam extends QScript {
@@ -61,6 +62,7 @@ class RealignAndFixBam extends QScript {
 
   @Argument(shortName = "r", required = false, doc = "Reference sequence") var referenceFile: File = new File("/humgen/1kg/reference/human_g1k_v37_decoy.fasta")
 
+  @ClassType(classOf[Int])
   @Argument(shortName = "t", required = false, doc = "Thread count for bwa") var threads: Option[Int] = _
 
   @Argument(shortName = "bq", required = false, doc = "Base quality to reset all the qualities to.") var baseQuality: Int = 40
@@ -104,6 +106,7 @@ class RealignAndFixBam extends QScript {
     @Argument(shortName = "r", required = false, doc = "Reference sequence")
     var referenceFile: File = new File("/humgen/1kg/reference/human_g1k_v37_decoy.fasta")
     @Argument(required = false)
+    @ClassType(classOf[Int])
     var threads: Option[Int] = _
 
     if (hasValue(threads)) {
@@ -180,6 +183,7 @@ class RealignAndFixBam extends QScript {
     var out:File=_
     @Argument(shortName = "r", required = false, doc = "Reference sequence")
     var referenceFile: File = new File("/humgen/1kg/reference/human_g1k_v37_decoy.fasta")
+    @ClassType(classOf[Int])
     @Argument(required=false)
     var threads:Option[Int]=_
 
