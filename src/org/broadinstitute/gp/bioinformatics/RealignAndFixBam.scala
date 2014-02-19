@@ -107,10 +107,10 @@ class RealignAndFixBam extends QScript {
     var referenceFile: File = new File("/humgen/1kg/reference/human_g1k_v37_decoy.fasta")
 
     if (hasValue(threads)) {
-      this.memoryLimit = 2 * threads
-      this.jobNativeArgs :+= "-pe smp_pe " + threads
+      this.memoryLimit = 2 * threads+1
+      this.jobNativeArgs :+= "-pe smp_pe " + (threads+1)
     } else
-      this.memoryLimit = 2
+      this.memoryLimit = 2 * 2
 
 
 
