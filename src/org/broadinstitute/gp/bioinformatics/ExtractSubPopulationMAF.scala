@@ -7,6 +7,8 @@ import scala.annotation.tailrec
 import org.broadinstitute.gp.bioinformatics.utils.RScriptFunction
 
 class ExtractSubPopulationMAF extends QScript {
+  qscript =>
+
   @Input(shortName = "vcfSrcDir", doc = "The source directory of VCFs to process", required = false)
   var vcfSrcDir: File = "/humgen/1kg/DCC/ftp/release/20110521/"
 
