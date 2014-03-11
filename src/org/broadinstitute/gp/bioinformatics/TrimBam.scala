@@ -88,7 +88,8 @@ class TrimBam extends QScript {
   abstract class GetRuntimeCommand extends CommandLineFunction{
 
 
-    override protected def required(param: Any): String = super.required(param,escape=false)
+    override protected def required(prefix: String, param: Any, suffix: String="", spaceSeparated: Boolean=true, escape: Boolean=false, format: String="%s"): String =
+      super.required(prefix, param, suffix, spaceSeparated, escape, format)
 
     val pipe = required("|")
 
