@@ -104,16 +104,19 @@ class TrimBam extends QScript {
 
 
     def getFromStream(is:InputStream):String={
-      val s:Scanner = new java.util.Scanner(is) useDelimiter "\\A"
+
+      logger.debug(scala.io.Source.fromInputStream(is).getLines().mkString("\n"))
+
+      val s:Scanner = new java.util.Scanner(is) useDelimiter "\n"
       if (s.hasNext) s.next() else ""
     }
 
 
     def getOutput:String={
-      logger.debug(s"calling INLINE command:\n $commandLine")
+      logger.debug(s"calling INLINE command:\n$commandLine")
       val retval=execCmd(commandLine)
-      logger.debug(s"got INLINE command output:\n $retval")
-      retval
+      logger.debug(s"got INLINE command output:\n$retval")
+      retval.trim
     }
 
   }
