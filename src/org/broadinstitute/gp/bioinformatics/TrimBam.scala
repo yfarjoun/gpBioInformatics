@@ -114,7 +114,7 @@ class TrimBam extends QScript {
     }
 
     def getOutput:String={
-      val totalcmd="/bin/sh -c " + '\"' + commandLine + '\"'
+      val totalcmd="/bin/sh -c " + "'" + commandLine + "'"
       logger.debug(s"calling INLINE command:\n$totalcmd")
       val retval=execCmd(totalcmd)
       logger.debug(s"got INLINE command output:\n$retval")
