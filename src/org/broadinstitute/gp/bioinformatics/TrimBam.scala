@@ -94,7 +94,7 @@ class TrimBam extends QScript {
     val pipe = required("|",escape=false)
 
     private def execCmd(cmd:String):String={
-      val process=Runtime.getRuntime.exec(s"""/bin/sh -c \"$cmd\" """)
+      val process=Runtime.getRuntime.exec(cmd)
       process.waitFor() //wait for it!
 
       if(process.exitValue()==0){
@@ -114,8 +114,10 @@ class TrimBam extends QScript {
     }
 
     def getOutput:String={
-      logger.debug(s"calling INLINE command:\n$commandLine")
-      val retval=execCmd(commandLine)
+      val totalcmd=s"""/bin/sh -c \"$commandLine\" """
+
+      logger.debug(s"calling INLINE command:\n$totalcmd")
+      val retval=execCmd(totalcmd)
       logger.debug(s"got INLINE command output:\n$retval")
       retval
     }
