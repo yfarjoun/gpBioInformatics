@@ -56,12 +56,15 @@ class TrimBam extends QScript {
     add(tr)
 
     val dss= new DownSampleSam
-    dss.Input=swapExt(if(trimLeft!=0){tr.Output}else {rsf.Output},".bam",".downsampled")
+    dss.Input=tr.Output
     dss.Fraction= sampleRatio
     dss.Output=Output
     add(dss)
 
   }
+
+
+
 
   class MergeSamFiles extends PicardCommandLineFunction{
 
