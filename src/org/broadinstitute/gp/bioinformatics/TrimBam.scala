@@ -84,9 +84,10 @@ class TrimBam extends QScript {
   abstract class GetRuntimeCommand extends CommandLineFunction{
 
     val pipe = required("|" ,escape=false)
-
     def execCmd(cmd:String):String={
       val process=Runtime.getRuntime.exec(cmd)
+      process.waitFor() //wait for it!
+
       if(process.exitValue()==0){
         getFromStream(process.getInputStream)
       }else{
