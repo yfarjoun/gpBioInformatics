@@ -138,8 +138,9 @@ class TrimBam extends QScript {
       required(Input.getAbsolutePath)+ pipe +
       required("head", "-n1",escape=false)+ pipe +
       required("cut", "-f","10",escape=false)+ pipe +
-      required("wc", "-c",escape=false) + pipe +
-      required("awk", "'{print $1-1}'",escape=false)
+      required("wc", "-c",escape=false)
+    //+ pipe +
+     // required("awk", "'{print $1-1}'",escape=false)
   }
   class FindNumberOfRecords extends GetRuntimeCommand{
     @Input var Input:File=_
@@ -149,7 +150,7 @@ class TrimBam extends QScript {
       required("samtools", "idxstats",escape=false)+
       required(Input.getAbsolutePath)+ pipe +
       required("cut", "-f","3,4",escape=false)+ pipe +
-      required("tr", "\t", "\n",escape=false ) + pipe +
+      required("tr", "\t", "\n",escape=true ) + pipe +
       required("paste", "-sd","+",escape=false)+ pipe+
       required("bc",escape=false)
   }
