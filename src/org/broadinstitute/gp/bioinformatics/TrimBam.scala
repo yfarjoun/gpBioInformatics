@@ -127,8 +127,9 @@ class TrimBam extends QScript {
 
   class TestGetRuntimeCommand extends GetRuntimeCommand{
 
-    override def commandLine:String = required("echo","hello how are you?")+ pipe +
-    required("wc")
+    override def commandLine:String = "echo hello how are you | wc"
+    //required("echo","hello how are you")+ pipe +
+    //required("wc")
 
   }
 
