@@ -94,7 +94,7 @@ class TrimBam extends QScript {
     val pipe = required("|")
 
     private def execCmd(cmd:String):String={
-      val process=Runtime.getRuntime.exec(cmd)
+      val process=Runtime.getRuntime.exec("/bin/sh -c " + cmd)
       process.waitFor() //wait for it!
 
       if(process.exitValue()==0){
@@ -125,7 +125,7 @@ class TrimBam extends QScript {
 
   class TestGetRuntimeCommand extends GetRuntimeCommand{
 
-    override def commandLine:String = required("echo","hello \t how are you?")+ pipe+
+    override def commandLine:String = required("echo","hello \t how are you?")+ pipe +
     required("tr","\t","\n")
 
   }
