@@ -23,6 +23,10 @@ class TrimBam extends QScript {
 
   def script(){
 
+    val tgrc=new TestGetRuntimeCommand
+    val temp=tgrc.getOutput
+    logger.info(s"output of test: $temp")
+
 
     val inputReadLengths=Input.map(x=>{
       val findInputReadLength=new FindReadLength
@@ -86,9 +90,9 @@ class TrimBam extends QScript {
 
     override protected def required(param: Any): String = super.required(param,escape=false)
 
-
     val pipe = required("|")
-    def execCmd(cmd:String):String={
+
+    private def execCmd(cmd:String):String={
       val process=Runtime.getRuntime.exec(cmd)
       process.waitFor() //wait for it!
 
@@ -103,14 +107,10 @@ class TrimBam extends QScript {
     }
 
 
-    def getFromStream(is:InputStream):String={
-
-      logger.debug(scala.io.Source.fromInputStream(is).getLines().mkString("\n"))
-
-      val s:Scanner = new java.util.Scanner(is) useDelimiter "\n"
+    private def getFromStream(is:InputStream):String={
+      val s:Scanner = new java.util.Scanner(is) useDelimiter "\\A"
       if (s.hasNext) s.next() else ""
     }
-
 
     def getOutput:String={
       logger.debug(s"calling INLINE command:\n$commandLine")
@@ -118,6 +118,13 @@ class TrimBam extends QScript {
       logger.debug(s"got INLINE command output:\n$retval")
       retval.trim
     }
+
+  }
+
+
+  class TestGetRuntimeCommand extends GetRuntimeCommand{
+
+    override def commandLine:String = required("echo","hello")
 
   }
 
