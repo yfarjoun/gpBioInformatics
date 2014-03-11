@@ -86,10 +86,23 @@ class TrimBam extends QScript {
     val pipe = required("|" ,escape=false)
 
     def execCmd(cmd:String):String={
-      val is:InputStream = Runtime.getRuntime.exec(cmd).getInputStream
+      val process=Runtime.getRuntime.exec(cmd)
+      if(process.exitValue()==0){
+        getFromStream(process.getInputStream)
+      }else{
+        val temp=getFromStream(process.getErrorStream)
+        logger.error(s"command returned an error:\n $temp")
+        val retval=process.exitValue()
+        throw new RuntimeException(s"command returned an error $retval")
+      }
+    }
+
+
+    def getFromStream(is:InputStream):String={
       val s:Scanner = new java.util.Scanner(is) useDelimiter "\\A"
       if (s.hasNext) s.next() else ""
     }
+
 
     def getOutput:String={
       logger.debug(s"calling INLINE command:\n $commandLine")
