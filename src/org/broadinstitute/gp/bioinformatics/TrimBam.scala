@@ -92,7 +92,10 @@ class TrimBam extends QScript {
     }
 
     def getOutput:String={
-      execCmd(commandLine)
+      logger.debug(s"calling INLINE command:\n $commandLine")
+      val retval=execCmd(commandLine)
+      logger.debug(s"got INLINE command output:\n $retval")
+      retval
     }
 
   }
@@ -104,9 +107,9 @@ class TrimBam extends QScript {
     override def commandLine:String =
       required("samtools", "view",escape=false)+
       required(Input.getAbsolutePath)+ pipe +
-      required("head", "-n1")+ pipe +
-      required("cut", "-f 10")+ pipe +
-      required("wc", "-c") + pipe +
+      required("head", "-n1",escape=false)+ pipe +
+      required("cut", "-f","10",escape=false)+ pipe +
+      required("wc", "-c",escape=false) + pipe +
       required("awk", "'{print $1-1}'",escape=false)
   }
   class FindNumberOfRecords extends GetRuntimeCommand{
@@ -114,12 +117,12 @@ class TrimBam extends QScript {
 
 
     override def commandLine:String =
-      required("samtools", "idxstats")+
+      required("samtools", "idxstats",escape=false)+
       required(Input.getAbsolutePath)+ pipe +
-      required("cut", "-f 3,4")+ pipe +
-      required("tr", "\t", "\n" ) + pipe +
-      required("paste", "-sd+")+pipe+
-      required("bc")
+      required("cut", "-f","3,4",escape=false)+ pipe +
+      required("tr", "\t", "\n",escape=false ) + pipe +
+      required("paste", "-sd","+",escape=false)+ pipe+
+      required("bc",escape=false)
   }
   class MergeSamFiles extends PicardCommandLineFunction{
 
