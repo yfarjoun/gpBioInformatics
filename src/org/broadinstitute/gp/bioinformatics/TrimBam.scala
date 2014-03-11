@@ -94,7 +94,7 @@ class TrimBam extends QScript {
     val pipe = required("|",escape=false)
 
     private def execCmd(cmd:String):String={
-      val process=Runtime.getRuntime.exec(s"/bin/sh -c \"$cmd\" ")
+      val process=Runtime.getRuntime.exec(s"""/bin/sh -c \"$cmd\" """)
       process.waitFor() //wait for it!
 
       if(process.exitValue()==0){
