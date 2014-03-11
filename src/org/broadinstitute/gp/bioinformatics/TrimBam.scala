@@ -115,7 +115,7 @@ class TrimBam extends QScript {
 
     def getOutput:String={
       val totalcmd:Array[String]=Array("-c",commandLine)
-      logger.debug(s"calling INLINE command:\n$totalcmd")
+      logger.debug("calling INLINE command:\n"+totalcmd.mkString("[",",","]"))
       val retval=execCmd("/bin/sh",totalcmd)
       logger.debug(s"got INLINE command output:\n$retval")
       retval
