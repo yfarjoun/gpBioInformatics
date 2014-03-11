@@ -102,7 +102,7 @@ class TrimBam extends QScript {
 
 
     override def commandLine:String =
-      required("samtools", "view")+
+      required("samtools", "view",escape=false)+
       required(Input.getAbsolutePath)+ pipe +
       required("head", "-n1")+ pipe +
       required("cut", "-f 10")+ pipe +
