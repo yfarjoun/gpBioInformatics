@@ -31,7 +31,7 @@ class TrimBam extends QScript {
     val inputReadLengths=Input.map(x=>{
       val findInputReadLength=new FindReadLength
       findInputReadLength.Input=x
-      findInputReadLength.getOutput.toInt
+      findInputReadLength.getReadLength
     })
 
     if(inputReadLengths.reduce(Math.min)!=inputReadLengths.reduce(Math.max)){
@@ -41,9 +41,9 @@ class TrimBam extends QScript {
 
     val findOtherReadLength=new FindReadLength
     findOtherReadLength.Input=OtherBAM
-    val otherReadLength=findOtherReadLength.getOutput.toInt
-    val trimLeft=Math.max(0,inputReadLength-otherReadLength)
+    val otherReadLength=findOtherReadLength.getReadLength
 
+    val trimLeft=Math.max(0,inputReadLength-otherReadLength)
 
 
     val inputNumberOfRecords=Input.map(x=>{
@@ -94,7 +94,7 @@ class TrimBam extends QScript {
     val pipe = required("|",escape=false)
 
     private def execCmd(cmd:String):String={
-      val process=Runtime.getRuntime.exec("/bin/sh -c " + cmd)
+      val process=Runtime.getRuntime.exec(s"/bin/sh -c \"$cmd\" ")
       process.waitFor() //wait for it!
 
       if(process.exitValue()==0){
@@ -117,7 +117,7 @@ class TrimBam extends QScript {
       logger.debug(s"calling INLINE command:\n$commandLine")
       val retval=execCmd(commandLine)
       logger.debug(s"got INLINE command output:\n$retval")
-      retval.trim
+      retval
     }
 
   }
@@ -139,8 +139,9 @@ class TrimBam extends QScript {
       required(Input.getAbsolutePath)+ pipe +
       required("head", "-n1")+ pipe +
       required("cut", "-f","10")+ pipe +
-      required("wc", "-c") + pipe +
-      required("awk", "{print $1-1}")
+      required("wc", "-c")
+
+    def getReadLength = getOutput.trim.toInt-1
   }
   class FindNumberOfRecords extends GetRuntimeCommand{
     @Input var Input:File=_
