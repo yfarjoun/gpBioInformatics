@@ -101,7 +101,7 @@ class TrimBam extends QScript {
     @Input var Input:File=_
 
 
-    override def commandLine:String = super.commandLine +
+    override def commandLine:String =
       required("samtools", "view")+
       required(Input.getAbsolutePath)+ pipe +
       required("head", "-n1")+ pipe +
@@ -113,7 +113,7 @@ class TrimBam extends QScript {
     @Input var Input:File=_
 
 
-    override def commandLine:String = super.commandLine +
+    override def commandLine:String =
       required("samtools", "idxstats")+
       required(Input.getAbsolutePath)+ pipe +
       required("cut", "-f 3,4")+ pipe +
@@ -128,7 +128,7 @@ class TrimBam extends QScript {
 
     jarName="MergeSamFiles.jar"
 
-    override def commandLine: String = super.commandLine +
+    override def commandLine: String =
       repeat("I=",Input) +
       required("O=",Output)+
       required("MERGE_SEQUENCE_DICTIONARIES=",escape = true)
@@ -139,7 +139,7 @@ class TrimBam extends QScript {
 
     jarName="RevertSam.jar"
 
-    override def commandLine: String = super.commandLine +
+    override def commandLine: String =
       required("I=",Input) +
       required("O=", Output)
 
@@ -154,7 +154,7 @@ class TrimBam extends QScript {
     jarPath="/home/unix/tfennell/bin/"
     jarName="TrimSamFile.jar"
 
-    override def commandLine: String = super.commandLine +
+    override def commandLine: String =
       required("I=",Input) +
       required("O=",Output)+
       required("TRIM_RIGHT=",Trim)
@@ -171,7 +171,7 @@ class TrimBam extends QScript {
     jarName="DownsampleSam.jar"
 
 
-    override def commandLine: String = super.commandLine +
+    override def commandLine: String =
       required("I=",Input) +
       required("O=",Output)+
       required(s"P=$Fraction)")
