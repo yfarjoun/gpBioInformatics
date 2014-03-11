@@ -135,25 +135,24 @@ class TrimBam extends QScript {
 
 
     override def commandLine:String =
-      required("samtools", "view",escape=false)+
+      required("samtools", "view")+
       required(Input.getAbsolutePath)+ pipe +
-      required("head", "-n1",escape=false)+ pipe +
-      required("cut", "-f","10",escape=false)+ pipe +
-      required("wc", "-c",escape=false)
-    //+ pipe +
-     // required("awk", "'{print $1-1}'",escape=false)
+      required("head", "-n1")+ pipe +
+      required("cut", "-f","10")+ pipe +
+      required("wc", "-c") + pipe +
+      required("awk", "{print $1-1}")
   }
   class FindNumberOfRecords extends GetRuntimeCommand{
     @Input var Input:File=_
 
 
     override def commandLine:String =
-      required("samtools", "idxstats",escape=false)+
+      required("samtools", "idxstats")+pipe
       required(Input.getAbsolutePath)+ pipe +
-      required("cut", "-f","3,4",escape=false)+ pipe +
-      required("tr", "\t", "\n",escape=true ) + pipe +
-      required("paste", "-sd","+",escape=false)+ pipe+
-      required("bc",escape=false)
+      required("cut", "-f","3,4")+ pipe +
+      required("tr", "\t", "\n" ) + pipe +
+      required("paste", "-sd","+")+ pipe+
+      required("bc")
   }
   class MergeSamFiles extends PicardCommandLineFunction{
 
@@ -165,7 +164,7 @@ class TrimBam extends QScript {
     override def commandLine: String =
       repeat("I=",Input) +
       required("O=",Output)+
-      required("MERGE_SEQUENCE_DICTIONARIES=",escape = true)
+      required("MERGE_SEQUENCE_DICTIONARIES=")
   }
   class RevertSamFile extends PicardCommandLineFunction{
     @Input var Input:File=_
