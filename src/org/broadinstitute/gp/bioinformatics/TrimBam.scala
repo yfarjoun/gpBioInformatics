@@ -125,8 +125,8 @@ class TrimBam extends QScript {
 
   class TestGetRuntimeCommand extends GetRuntimeCommand{
 
-    override def commandLine:String = required("echo","hello \t how are you?")+ pipe +
-    required("tr","\t","\n")
+    override def commandLine:String = required("echo","hello how are you?")+ pipe +
+    required("wc")
 
   }
 
@@ -151,7 +151,7 @@ class TrimBam extends QScript {
       required("samtools", "idxstats")+pipe
       required(Input.getAbsolutePath)+ pipe +
       required("cut", "-f","3,4")+ pipe +
-      required("tr", "\t", "\n" ) + pipe +
+      required("tr", "\\t", "\\n" ) + pipe +
       required("paste", "-sd","+")+ pipe+
       required("bc")
   }
