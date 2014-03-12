@@ -102,7 +102,7 @@ class TrimBam extends QScript {
     override def commandLine: String =  super.commandLine+
       required("I=",Input) +
       required("O=",Output)+
-      required("TRIM_RIGHT=",Trim)
+      required("RIGHT_TRIM=",Trim)
   }
 
 
