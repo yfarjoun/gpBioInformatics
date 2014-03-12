@@ -119,7 +119,7 @@ class TrimBam extends QScript {
     override def commandLine: String = super.commandLine+
       required("I=",Input) +
       required("O=",Output)+
-      required(s"P=$Fraction)")
+      required(s"P=$Fraction")
   }
 
 
