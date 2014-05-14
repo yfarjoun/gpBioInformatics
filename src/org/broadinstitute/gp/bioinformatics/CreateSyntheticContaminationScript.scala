@@ -59,7 +59,7 @@ class CreateSyntheticContaminationScript extends QScript {
   @Input(shortName = "vcf", required = true, doc = "ContaminationVCF") var ContaminationVCF: File = _
   @Input(shortName = "b1", required = true, doc = "First BAM file") var bam1: File = _
   @Input(shortName = "b2", required = true, doc = "Second BAM file") var bam2: File = _
-  @Input var ContigFile: File = _
+  @Input(required = false) var ContigFile: File = null
   @Input(shortName = "r", required = false, doc = "Reference sequence") var referenceFile: File = new File("/humgen/1kg/reference/human_g1k_v37_decoy.fasta")
 
   @ClassType(classOf[Double])
@@ -208,14 +208,15 @@ class CreateSyntheticContaminationScript extends QScript {
       add(ms1)
 
      //estimate contamination
-
-      val ec1=new EstimateContamination()
-      ec1.bam=ms1.out
-      ec1.ContaminationJarPath=ContaminationJarPath
-      ec1.metrics=swapExt(ms1.out,"bam","metrics")
-      ec1.plotMetrics=swapExt(ms1.out,"bam","plot_metrics")
-      ec1.CentromereFile=ContigFile
-      add(ec1)
+      if(ContigFile!=null){
+        val ec1=new EstimateContamination()
+        ec1.bam=ms1.out
+        ec1.ContaminationJarPath=ContaminationJarPath
+        ec1.metrics=swapExt(ms1.out,"bam","metrics")
+        ec1.plotMetrics=swapExt(ms1.out,"bam","plot_metrics")
+        ec1.CentromereFile=ContigFile
+        add(ec1)
+      }
    }
 
 
