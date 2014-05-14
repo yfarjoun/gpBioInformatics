@@ -87,7 +87,7 @@ class CreateSyntheticContaminationScript extends QScript {
     //this.omitDepthOutputAtEachBase = true
     //this.omitIntervalStatistics = true
 
-  }      x`
+  }
 
   class MyDepthOfCoverage extends DepthOfCoverage with DocArguments{
     @Output lazy val out_summary:File=swapExt(this.out,"",".sample_summary")
