@@ -57,8 +57,7 @@ class CreateSyntheticContaminationScript extends QScript {
   qscript =>
 
   @Input(shortName = "vcf", required = true, doc = "ContaminationVCF") var ContaminationVCF: File = _
-  @Input(shortName = "b1", required = true, doc = "First BAM file") var bam1: File = _
-  @Input(shortName = "b2", required = true, doc = "Second BAM file") var bam2: File = _
+  @Input(shortName = "b", required = true, doc = "BAM files. Files will be contaminated in pairs.") var bam: Seq[File] = _
   @Input(required = false) var ContigFile: File = null
   @Input(shortName = "r", required = false, doc = "Reference sequence") var referenceFile: File = new File("/humgen/1kg/reference/human_g1k_v37_decoy.fasta")
 
@@ -95,32 +94,36 @@ class CreateSyntheticContaminationScript extends QScript {
 
   def script {
 
-    if(ContaminationJarPath==null)ContaminationJarPath=picardPath
+    if(ContaminationJarPath==null) ContaminationJarPath=picardPath
 
     assert(fractionList.reduce(math.max(_:Double,_:Double)) <= 1.0)
     assert(fractionList.reduce(math.min(_:Double,_:Double)) >= 0.0)
 
+    assert(this.bam.length%2==0)
 
-    for(swap:Boolean<-Set(false,includeSwapped)){
-      doWork(swap)
+    for(pair:Pair<-bam.iterator.sliding(2,2).toList.map(x=>Pair(x(0),x(1)))){
+      for(swap:Boolean<-Set(false,includeSwapped)){
+        doWork(swap, pair)
+    }
     }
 
   }
 
-  def doWork(swapBams:Boolean){
+  def doWork(swapBams:Boolean, bams:Pair[File,File]){
 
-    val (innerbam1,innerbam2)=if(swapBams)(bam1,bam2) else (bam2,bam1)
+
+    val innerbams=if(swapBams) bams.swap else bams
 
     //printreads (using the contamination VCF, to save space)
 
     val pr1 = new PrintReads with CommonArguments
-    pr1.input_file :+= innerbam1
-    pr1.out = swapExt(innerbam1, bamSuffix, "small.bam")
+    pr1.input_file :+= innerbams._1
+    pr1.out = swapExt(innerbams._1, bamSuffix, "small.bam")
     add(pr1)
 
     val pr2 = new PrintReads with CommonArguments
-    pr2.input_file :+= innerbam2
-    pr2.out = swapExt(innerbam2, bamSuffix, "small.bam")
+    pr2.input_file :+= innerbams._2
+    pr2.out = swapExt(innerbams._2, bamSuffix, "small.bam")
     add(pr2)
 
     val doc1=new MyDepthOfCoverage with DocArguments
