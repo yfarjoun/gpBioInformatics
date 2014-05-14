@@ -101,12 +101,11 @@ class CreateSyntheticContaminationScript extends QScript {
 
     assert(this.bam.length%2==0)
 
-    for(pair:Pair<-bam.iterator.sliding(2,2).toList.map(x=>Pair(x(0),x(1)))){
+    for(pair:Pair[File,File]<-bam.iterator.sliding(2,2).toList.map(x=>Pair[File,File](x(0),x(1)))){
       for(swap:Boolean<-Set(false,includeSwapped)){
         doWork(swap, pair)
+      }
     }
-    }
-
   }
 
   def doWork(swapBams:Boolean, bams:Pair[File,File]){
