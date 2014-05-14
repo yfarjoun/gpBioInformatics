@@ -5,6 +5,7 @@ import org.broadinstitute.sting.queue.QScript
 import java.io.InputStream
 import java.util.Scanner
 import org.broadinstitute.sting.commandline.Argument
+import org.broadinstitute.gp.bioinformatics.utils.PicardCommandLineFunction
 
 class TrimBam extends QScript {
   qscript =>
@@ -40,6 +41,7 @@ class TrimBam extends QScript {
 
    /* val msf=new MergeSamFiles
     msf.Input=Input
+    rsf.isIntermediate=true
     msf.Output=swapExt(Output,".bam",".merged.bam")
     add(msf)
      */
@@ -47,11 +49,13 @@ class TrimBam extends QScript {
     val rsf = new RevertSamFile
     rsf.Input=Input
     rsf.Output=swapExt(rsf.Input,".bam",".reverted.bam")
+    rsf.isIntermediate=true
     add(rsf)
 
     val tr=new TrimReads
     tr.Input=rsf.Output
     tr.Trim=trimLeft
+    rsf.isIntermediate=true
     tr.Output=swapExt(tr.Input,".bam",".trimmed.bam")
     add(tr)
 
@@ -59,6 +63,7 @@ class TrimBam extends QScript {
     dss.Input=tr.Output
     dss.Fraction= sampleRatio
     dss.Output=Output
+    rsf.isIntermediate=false
     add(dss)
 
   }
@@ -73,6 +78,8 @@ class TrimBam extends QScript {
 
     jarName="MergeSamFiles.jar"
 
+    analysisName="MergeSamFiles"
+
     override def commandLine: String =  super.commandLine+
       repeat("I=",Input) +
       required("O=",Output)+
@@ -83,6 +90,7 @@ class TrimBam extends QScript {
     @Output var Output:File=_
 
     jarName="RevertSam.jar"
+    analysisName="RevertSam"
 
     override def commandLine: String =   super.commandLine+
       required("I=",Input) +
@@ -98,6 +106,8 @@ class TrimBam extends QScript {
 
     jarPath="/home/unix/tfennell/bin/"
     jarName="TrimSamFile.jar"
+
+    analysisName="TrimReads"
 
     override def commandLine: String =  super.commandLine+
       required("I=",Input) +
@@ -115,6 +125,7 @@ class TrimBam extends QScript {
 
     jarName="DownsampleSam.jar"
 
+    analysisName="DownsampleSam"
 
     override def commandLine: String = super.commandLine+
       required("I=",Input) +

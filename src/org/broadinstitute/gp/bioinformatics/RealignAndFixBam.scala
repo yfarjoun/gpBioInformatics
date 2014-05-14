@@ -3,6 +3,7 @@ package org.broadinstitute.gp.bioinformatics
 
 import org.broadinstitute.sting.queue.QScript
 import org.broadinstitute.sting.commandline.ClassType
+import org.broadinstitute.gp.bioinformatics.utils.PicardCommandLineFunction
 
 
 class RealignAndFixBam extends QScript {
