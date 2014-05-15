@@ -264,15 +264,14 @@ class CreateSyntheticContaminationScript extends QScript {
       @Argument(required = false) var ip: Int = 50
 
       this.jarFile = new File(picardPath, "DownsampleSam.jar")
-      this.javaMemoryLimit=4000
+      this.javaMemoryLimit=4
+      this.memoryLimit=4
       this.jobNativeArgs+:="-l virtual_free=5g"
-
 
       override def commandLine = super.commandLine +
         required("I=", bam, spaceSeparated = false) +
         required("O=", out,spaceSeparated = false) +
         required(s"P=$$(cat $fraction)",escape=false)
-
     }
 
     class GetHeader extends CommandLineFunction {
