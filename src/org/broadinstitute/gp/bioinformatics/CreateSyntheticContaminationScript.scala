@@ -264,6 +264,8 @@ class CreateSyntheticContaminationScript extends QScript {
       @Argument(required = false) var ip: Int = 50
 
       this.jarFile = new File(picardPath, "DownsampleSam.jar")
+      this.javaMemoryLimit=4000
+      this.jobNativeArgs+:="-l virtual_free=5g"
 
 
       override def commandLine = super.commandLine +
