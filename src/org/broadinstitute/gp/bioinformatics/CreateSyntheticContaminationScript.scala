@@ -80,11 +80,9 @@ class CreateSyntheticContaminationScript extends QScript {
   trait DocArguments extends DepthOfCoverage with CommonArguments {
     this.minBaseQuality = 17
     this.minMappingQuality = 30
-    //this.omitLocusTable = true
-    //this.omitBaseOutput = true
-    //this.omitIntervals = true
-    //this.omitDepthOutputAtEachBase = true
-    //this.omitIntervalStatistics = true
+    this.omitLocusTable = true
+    this.omitDepthOutputAtEachBase = true
+    this.omitIntervalStatistics = true
 
   }
 
