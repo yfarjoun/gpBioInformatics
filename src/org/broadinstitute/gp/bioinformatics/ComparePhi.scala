@@ -49,6 +49,7 @@ package org.broadinstitute.gp.bioinformatics
 import org.broadinstitute.sting.queue.QScript
 import org.broadinstitute.sting.queue.extensions.gatk.{BaseRecalibrator, PrintReads, CommandLineGATK}
 import org.broadinstitute.gp.bioinformatics.utils.PicardCommandLineFunction
+import org.broadinstitute.sting.gatk.walkers.na12878kb.assess.AssessNA12878
 
 
 class ComparePhi extends QScript {
@@ -172,8 +173,8 @@ class ComparePhi extends QScript {
   }
 
   class CalculateBaseQualityFit extends PicardCommandLineFunction{
-    @Input val in:File  =_
-    @Output val out:File =_
+    @Input var in:File  =_
+    @Output var out:File =_
 
     @Argument(required = false)
     val variants="/seq/tng/giab/NISTIntegratedCalls_14datasets_131103_allcall_UGHapMerge_HetHomVarPASS_VQSRv2.18_all_nouncert_excludesimplerep_excludesegdups_excludedecoy_excludeRepSeqSTRs_noCNVs.vcf"
@@ -195,15 +196,18 @@ class ComparePhi extends QScript {
 
   }
 
-
-
-  def analyzeBAM(@Input bam:File){
-    val cbqf= new CalculateBaseQualityFit()
+def analyzeBAM(@Input bam:File){
+    val cbqf = new CalculateBaseQualityFit()
     cbqf.in=bam
     cbqf.out=swapExt(bam,"bam","phi")
 
 
-    assessQuality(bam,baseOut)
+    //variant call
+
+    //assessNA12878
+    var an12878 = new AssessNA12878 with UNIVERSAL_GATK_ARGS
+    an12878.inputs+=bam
+
   }
 
 }

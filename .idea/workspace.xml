@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="d17c68eb-a92b-4499-88c0-89e11f16825d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ComparePhi.scala" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ComparePhi.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gpBioInfo.iws" />
@@ -67,10 +67,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="FindNoKmerCoverageScript.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="FindNoKmerCoverageScript.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="236" column="32" selection-start="16168" selection-end="16168" vertical-scroll-proportion="0.47796142" vertical-offset="2488" max-vertical-offset="3810">
+            <state line="91" column="34" selection-start="11300" selection-end="11300" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3810">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ComparePhi.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ComparePhi.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="212" column="28" selection-start="13542" selection-end="13542" vertical-scroll-proportion="0.87931037" vertical-offset="2370" max-vertical-offset="3240">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="gpBioInfo.iml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gpBioInfo.iml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="17192" max-vertical-offset="19500">
               <folding />
             </state>
           </provider>
@@ -79,7 +108,7 @@
       <file leaf-file-name="QScript.class" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/QScript.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="16" selection-start="1522" selection-end="1522" vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="585">
+            <state line="17" column="16" selection-start="1522" selection-end="1522" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="585">
               <folding />
             </state>
           </provider>
@@ -88,7 +117,7 @@
       <file leaf-file-name="Arrays.java" pinned="false" current="false" current-in-tab="false">
         <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1942" column="0" selection-start="85185" selection-end="85185" vertical-scroll-proportion="0.0" vertical-offset="28543" max-vertical-offset="54840">
+            <state line="1942" column="0" selection-start="85185" selection-end="85185" vertical-scroll-proportion="0.0" vertical-offset="29130" max-vertical-offset="55185">
               <folding />
             </state>
           </provider>
@@ -106,7 +135,7 @@
       <file leaf-file-name="ExtractSubPopulationMAF.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="21" selection-start="1996" selection-end="1996" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1800">
+            <state line="51" column="21" selection-start="1954" selection-end="1954" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1830">
               <folding />
             </state>
           </provider>
@@ -133,7 +162,7 @@
       <file leaf-file-name="CreateSyntheticContaminationScript.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/CreateSyntheticContaminationScript.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="257" column="81" selection-start="15538" selection-end="15538" vertical-scroll-proportion="0.0" vertical-offset="3855" max-vertical-offset="5505">
+            <state line="257" column="81" selection-start="15566" selection-end="15566" vertical-scroll-proportion="0.0" vertical-offset="3855" max-vertical-offset="5565">
               <folding />
             </state>
           </provider>
@@ -142,7 +171,7 @@
       <file leaf-file-name="RScriptFunction.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/RScriptFunction.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="1" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
+            <state line="22" column="1" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="435">
               <folding />
             </state>
           </provider>
@@ -175,14 +204,14 @@
         <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala" />
         <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/GenotypeProjects.scala" />
         <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ComparePhi.scala" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="42" />
-    <option name="y" value="177" />
-    <option name="width" value="2440" />
-    <option name="height" value="1194" />
+    <option name="width" value="2560" />
+    <option name="height" value="1440" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -210,6 +239,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -263,9 +295,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,7 +312,7 @@
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="last_opened_file_path" value="/Volumes/seq_tng/farjoun/FingerPrints/RecalibrateFluidigmCalls/GenotypeProjects.scala" />
-    <property name="FullScreen" value="false" />
+    <property name="FullScreen" value="true" />
     <property name="LayoutCode.rearrangeEntriesScala" value="false" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="401" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
@@ -748,11 +777,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="42" y="177" width="2440" height="1194" extended-state="0" />
+    <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977778" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32950467" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -761,17 +790,17 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977778" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977778" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32977778" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977778" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977778" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -1088,14 +1117,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/CreateSyntheticContaminationScript.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="257" column="81" selection-start="15538" selection-end="15538" vertical-scroll-proportion="0.0" vertical-offset="3224" max-vertical-offset="4785">
+        <state line="257" column="81" selection-start="15566" selection-end="15566" vertical-scroll-proportion="0.0" vertical-offset="3855" max-vertical-offset="5565">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="21" selection-start="1996" selection-end="1996" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="1800">
+        <state line="51" column="21" selection-start="1954" selection-end="1954" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1830">
           <folding />
         </state>
       </provider>
@@ -1126,15 +1155,38 @@
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/QScript.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="16" selection-start="1522" selection-end="1522" vertical-scroll-proportion="-10.2" vertical-offset="0" max-vertical-offset="585">
+        <state line="17" column="16" selection-start="1522" selection-end="1522" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="585">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="236" column="32" selection-start="16168" selection-end="16168" vertical-scroll-proportion="0.47796142" vertical-offset="2488" max-vertical-offset="3810">
+        <state line="91" column="34" selection-start="11300" selection-end="11300" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3810">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gpBioInfo.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="906">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="17192" max-vertical-offset="19470">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ComparePhi.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="212" column="28" selection-start="13542" selection-end="13542" vertical-scroll-proportion="0.87931037" vertical-offset="2370" max-vertical-offset="3240">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
