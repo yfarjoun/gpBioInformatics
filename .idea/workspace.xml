@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="d17c68eb-a92b-4499-88c0-89e11f16825d" name="Default" comment="">
+    <list default="true" readonly="true" id="d17c68eb-a92b-4499-88c0-89e11f16825d" name="Default" comment="an actual working version....&#10;">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/broadinstitute" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp" />
@@ -120,7 +120,7 @@
       <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="17192" max-vertical-offset="19845">
+            <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="17207" max-vertical-offset="19830">
               <folding />
             </state>
           </provider>
@@ -861,7 +861,8 @@
     <MESSAGE value="Added a script that can be used to make calls to many projects at the same time (I use it for the fingerprinting recalibration)&#10;" />
     <MESSAGE value="made centromerelocation optional" />
     <MESSAGE value="an actual working version...." />
-    <option name="LAST_COMMIT_MESSAGE" value="an actual working version...." />
+    <MESSAGE value="an actual working version....&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="an actual working version....&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1184,7 +1185,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="17192" max-vertical-offset="19470">
+        <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="17207" max-vertical-offset="19830">
           <folding />
         </state>
       </provider>
