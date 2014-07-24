@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="d17c68eb-a92b-4499-88c0-89e11f16825d" name="Default" comment="an actual working version....&#10;">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/broadinstitute" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ComparePhi.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/CreateSyntheticContaminationScript.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/GenotypeProjects.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/PicardCommandLineFunction.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/RScriptFunction.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/RealignAndFixBam.scala" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/TrimBam.scala" />
+    <list default="true" readonly="true" id="d17c68eb-a92b-4499-88c0-89e11f16825d" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gpBioInfo.iws" />
@@ -93,7 +78,7 @@
       <file leaf-file-name="ComparePhi.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ComparePhi.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="56" selection-start="8580" selection-end="8580" vertical-scroll-proportion="0.31034482" vertical-offset="480" max-vertical-offset="3285">
+            <state line="50" column="56" selection-start="8580" selection-end="8580" vertical-scroll-proportion="-0.8323896" vertical-offset="825" max-vertical-offset="2625">
               <folding />
             </state>
           </provider>
@@ -102,7 +87,7 @@
       <file leaf-file-name="PicardCommandLineFunction.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/PicardCommandLineFunction.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="6" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+            <state line="9" column="6" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="450">
               <folding />
             </state>
           </provider>
@@ -120,7 +105,7 @@
       <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="17207" max-vertical-offset="19830">
+            <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="19575">
               <folding />
             </state>
           </provider>
@@ -312,10 +297,10 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane">
         <subPane />
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -799,7 +784,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950467" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -808,10 +793,9 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32950467" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977778" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32950467" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -822,6 +806,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32950467" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -1192,9 +1177,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../GPBioInfo.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="883">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="883" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/PicardCommandLineFunction.scala">
@@ -1206,7 +1189,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ComparePhi.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="56" selection-start="8580" selection-end="8580" vertical-scroll-proportion="0.31034482" vertical-offset="480" max-vertical-offset="3285">
+        <state line="50" column="56" selection-start="8580" selection-end="8580" vertical-scroll-proportion="-0.8323896" vertical-offset="825" max-vertical-offset="2625">
           <folding />
         </state>
       </provider>
