@@ -27,25 +27,26 @@ class BQSRSeveralWays extends QScript {
           BQSRFile(file, intervals, variants)
   }
 
-  def BQSRFile(file: File, intervalsArgument: (String, File), variants: (String, List[File])) {
+  trait CommonArguments extends CommandLineGATK {
+    reference_sequence = referenceFile
+    useOriginalQualities = true
+  }
 
-    trait CommonArguments extends CommandLineGATK {
-      reference_sequence = referenceFile
-      intervals :+= intervalsArgument._2
-      input_file :+= file
-      useOriginalQualities = true
-    }
+  def BQSRFile(file: File, intervals: (String, File), variants: (String, List[File])) {
 
     val bqsr = new BaseRecalibrator with CommonArguments
     bqsr.knownSites = variants._2
-    bqsr.out = swapExt(file, ".bam", "." + intervalsArgument._1 + "." + variants._1 + ".tbl")
-    bqsr.scatterCount=scatterCount
+    bqsr.out = swapExt(file, ".bam", "." + intervals._1 + "." + variants._1 + ".tbl")
+    bqsr.intervals :+= intervals._2
+    bqsr.scatterCount = scatterCount
+    bqsr.input_file :+= file
 
     add(bqsr)
 
     val pr = new PrintReads with CommonArguments
     pr.out = swapExt(bqsr.out, "tbl", "bam")
     pr.BQSR = bqsr.out
+    pr.input_file :+= file
 
     add(pr)
   }
