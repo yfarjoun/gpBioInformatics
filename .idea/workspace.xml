@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="d17c68eb-a92b-4499-88c0-89e11f16825d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/BQSRSeveralWays.scala" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gpBioInfo.iws" />
@@ -69,16 +72,16 @@
       <file leaf-file-name="FindNoKmerCoverageScript.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="91" column="34" selection-start="11300" selection-end="11300" vertical-scroll-proportion="0.0" vertical-offset="1365" max-vertical-offset="4515">
+            <state line="91" column="34" selection-start="11300" selection-end="11300" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3810">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ComparePhi.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ComparePhi.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ComparePhi.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="56" selection-start="8580" selection-end="8580" vertical-scroll-proportion="-0.8323896" vertical-offset="825" max-vertical-offset="2625">
+            <state line="50" column="56" selection-start="8580" selection-end="8580" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="2625">
               <folding />
             </state>
           </provider>
@@ -87,7 +90,7 @@
       <file leaf-file-name="PicardCommandLineFunction.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/PicardCommandLineFunction.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="6" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="450">
+            <state line="24" column="25" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
               <folding />
             </state>
           </provider>
@@ -105,7 +108,7 @@
       <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="19575">
+            <state line="26" column="0" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="23985">
               <folding />
             </state>
           </provider>
@@ -132,7 +135,90 @@
       <file leaf-file-name="GenotypeProjects.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/GenotypeProjects.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="17" selection-start="1609" selection-end="1609" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="1080">
+            <state line="21" column="234" selection-start="779" selection-end="779" vertical-scroll-proportion="0.0" vertical-offset="92" max-vertical-offset="975">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RealignAndFixBam.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/RealignAndFixBam.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="8" column="10" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="2310">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BQSRSeveralWays.scala" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/BQSRSeveralWays.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="25" selection-start="656" selection-end="656" vertical-scroll-proportion="0.27180067" vertical-offset="0" max-vertical-offset="885">
+              <folding>
+                <element signature="e#47#92#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Predef.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/scala/Predef.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="76" column="8" selection-start="4652" selection-end="4652" vertical-scroll-proportion="-11.76" vertical-offset="846" max-vertical-offset="3150">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="QFunction.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/function/QFunction.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="35" column="6" selection-start="2825" selection-end="2825" vertical-scroll-proportion="-21.0" vertical-offset="0" max-vertical-offset="990">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PrintReads.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/gatk/PrintReads.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="83" selection-start="138" selection-end="138" vertical-scroll-proportion="-0.29411766" vertical-offset="0" max-vertical-offset="930">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommandLineGATK.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/gatk/CommandLineGATK.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="113" column="10" selection-start="15271" selection-end="15275" vertical-scroll-proportion="-8.0" vertical-offset="1287" max-vertical-offset="3330">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseRecalibrator.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/gatk/BaseRecalibrator.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="22" selection-start="77" selection-end="77" vertical-scroll-proportion="-0.29411766" vertical-offset="0" max-vertical-offset="1815">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseRecalibrator.class" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/gatk/walkers/bqsr/BaseRecalibrator.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="11" selection-start="2748" selection-end="2748" vertical-scroll-proportion="-11.24" vertical-offset="109" max-vertical-offset="1125">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrimBam.scala" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/TrimBam.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="67" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2205">
               <folding />
             </state>
           </provider>
@@ -141,25 +227,7 @@
       <file leaf-file-name="ExtractSubPopulationMAF.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="21" selection-start="1954" selection-end="1954" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1830">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CombineVariants.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/gatk/CombineVariants.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="21" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1170">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SelectVariants.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/gatk/SelectVariants.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="93" selection-start="133" selection-end="148" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1830">
+            <state line="65" column="21" selection-start="2386" selection-end="2386" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1785">
               <folding />
             </state>
           </provider>
@@ -168,7 +236,7 @@
       <file leaf-file-name="CreateSyntheticContaminationScript.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/CreateSyntheticContaminationScript.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="257" column="81" selection-start="15566" selection-end="15566" vertical-scroll-proportion="0.0" vertical-offset="3855" max-vertical-offset="5565">
+            <state line="77" column="17" selection-start="9626" selection-end="9771" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4845">
               <folding />
             </state>
           </provider>
@@ -177,7 +245,7 @@
       <file leaf-file-name="RScriptFunction.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/RScriptFunction.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="1" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="435">
+            <state line="22" column="1" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
               <folding />
             </state>
           </provider>
@@ -205,13 +273,17 @@
         <option value="$PROJECT_DIR$/src/scala/qscripts/CombineAllVCFs.scala" />
         <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/CombineAllVCFs.scala" />
         <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/RScriptFunction.scala" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/PicardCommandLineFunction.scala" />
+        <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ComparePhi.scala" />
+        <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala" />
+        <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala" />
         <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/CreateSyntheticContaminationScript.scala" />
         <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/RScriptFunction.scala" />
-        <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala" />
         <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/GenotypeProjects.scala" />
-        <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala" />
-        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
-        <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ComparePhi.scala" />
+        <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/RealignAndFixBam.scala" />
+        <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/TrimBam.scala" />
+        <option value="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/BQSRSeveralWays.scala" />
       </list>
     </option>
   </component>
@@ -256,6 +328,238 @@
               <option name="myItemId" value="External Libraries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Queue-2.7-135-g3f96550.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gpBioInfo2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Queue-2.7-135-g3f96550.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gpBioInfo2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Queue-2.7-135-g3f96550.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gpBioInfo2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Queue-2.7-135-g3f96550.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="broadinstitute" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gpBioInfo2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Queue-2.7-135-g3f96550.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="broadinstitute" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gpBioInfo2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Queue-2.7-135-g3f96550.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="broadinstitute" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="queue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gpBioInfo2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Queue-2.7-135-g3f96550.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="broadinstitute" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="queue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gpBioInfo2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Queue-2.7-135-g3f96550.jar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="org" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="broadinstitute" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sting" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="queue" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="extensions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gatk" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gpBioInfo2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -274,24 +578,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="bioinformatics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gpBioInfo2" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bioinformatics" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -308,7 +594,7 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.lastSelected" value="editor.preferences.completion" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -779,12 +1065,16 @@
       <created>1390513509839</created>
       <updated>1390513509839</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="an actual working version....&#10;">
+      <created>1406233395477</created>
+      <updated>1406233395477</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="2560" height="1440" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950467" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -793,9 +1083,10 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32950467" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32950467" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977778" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950467" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -806,7 +1097,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32950467" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
@@ -857,62 +1147,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="21" selection-start="1996" selection-end="1996" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1800">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/gatk/CombineVariants.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="21" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1170">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/gatk/SelectVariants.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="93" selection-start="133" selection-end="148" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1830">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/CreateSyntheticContaminationScript.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="257" column="81" selection-start="15538" selection-end="15538" vertical-scroll-proportion="0.0" vertical-offset="3855" max-vertical-offset="5505">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/RScriptFunction.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="1" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="158" selection-start="9240" selection-end="9287" vertical-scroll-proportion="0.0" vertical-offset="742" max-vertical-offset="4485">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="21" selection-start="1996" selection-end="1996" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="1800">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/gatk/CombineVariants.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="21" selection-start="76" selection-end="76" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1170">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/gatk/SelectVariants.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="93" selection-start="133" selection-end="148" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1830">
@@ -1068,21 +1302,9 @@
         <state line="1" column="6" selection-start="54" selection-end="54" vertical-scroll-proportion="0.013837638" vertical-offset="0" max-vertical-offset="1084" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/RScriptFunction.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="1" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/scala/collection/SeqLike.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="6" selection-start="3420" selection-end="3420" vertical-scroll-proportion="-15.84" vertical-offset="114" max-vertical-offset="840" />
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/gatk/CommandLineGATK.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="39" selection-start="7606" selection-end="7618" vertical-scroll-proportion="-4.607843" vertical-offset="620" max-vertical-offset="3330" />
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/scala/collection/TraversableLike.class">
@@ -1109,20 +1331,6 @@
         <state line="104" column="83" selection-start="4866" selection-end="4866" vertical-scroll-proportion="0.6104651" vertical-offset="1125" max-vertical-offset="1845" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/CreateSyntheticContaminationScript.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="257" column="81" selection-start="15566" selection-end="15566" vertical-scroll-proportion="0.0" vertical-offset="3855" max-vertical-offset="5565">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="21" selection-start="1954" selection-end="1954" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1830">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/function/RetryMemoryLimit.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="6" selection-start="54" selection-end="54" vertical-scroll-proportion="0.021398002" vertical-offset="0" max-vertical-offset="701" />
@@ -1131,13 +1339,6 @@
     <entry file="file:///Volumes/seq_tng/farjoun/FingerPrints/RecalibrateFluidigmCalls/GenotypeProjects.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="91" selection-start="621" selection-end="621" vertical-scroll-proportion="0.22727273" vertical-offset="0" max-vertical-offset="975" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/GenotypeProjects.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="17" selection-start="1609" selection-end="1609" vertical-scroll-proportion="0.0" vertical-offset="189" max-vertical-offset="975">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.7.0_25.jdk/Contents/Home/src.zip!/java/util/Arrays.java">
@@ -1154,13 +1355,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="34" selection-start="11300" selection-end="11300" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3810">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/gpBioInfo.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="906">
@@ -1170,7 +1364,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="39" selection-end="39" vertical-scroll-proportion="0.0" vertical-offset="17207" max-vertical-offset="19830">
+        <state line="26" column="0" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="23955">
           <folding />
         </state>
       </provider>
@@ -1182,15 +1376,115 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/PicardCommandLineFunction.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="6" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+        <state line="24" column="25" selection-start="683" selection-end="683" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ComparePhi.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="56" selection-start="8580" selection-end="8580" vertical-scroll-proportion="-0.8323896" vertical-offset="825" max-vertical-offset="2625">
+        <state line="50" column="56" selection-start="8580" selection-end="8580" vertical-scroll-proportion="0.0" vertical-offset="780" max-vertical-offset="2625">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="21" selection-start="2386" selection-end="2386" vertical-scroll-proportion="0.0" vertical-offset="765" max-vertical-offset="1785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/RScriptFunction.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="1" selection-start="402" selection-end="402" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/GenotypeProjects.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="234" selection-start="779" selection-end="779" vertical-scroll-proportion="0.0" vertical-offset="92" max-vertical-offset="975">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/TrimBam.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="67" selection-start="582" selection-end="582" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2205">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/gatk/walkers/bqsr/BaseRecalibrator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="11" selection-start="2748" selection-end="2748" vertical-scroll-proportion="-11.24" vertical-offset="109" max-vertical-offset="1125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/RealignAndFixBam.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="10" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2310">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/CreateSyntheticContaminationScript.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="17" selection-start="9626" selection-end="9771" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/gatk/BaseRecalibrator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="22" selection-start="77" selection-end="77" vertical-scroll-proportion="-0.29411766" vertical-offset="0" max-vertical-offset="1815">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/function/QFunction.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="6" selection-start="2825" selection-end="2825" vertical-scroll-proportion="-21.0" vertical-offset="0" max-vertical-offset="990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/scala/Predef.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="8" selection-start="4652" selection-end="4652" vertical-scroll-proportion="-11.76" vertical-offset="846" max-vertical-offset="3150">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/gatk/CommandLineGATK.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="10" selection-start="15271" selection-end="15275" vertical-scroll-proportion="-8.0" vertical-offset="1287" max-vertical-offset="3330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/gatk/PrintReads.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="83" selection-start="138" selection-end="138" vertical-scroll-proportion="-0.29411766" vertical-offset="0" max-vertical-offset="930">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="91" column="34" selection-start="11300" selection-end="11300" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3810">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/BQSRSeveralWays.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="25" selection-start="656" selection-end="656" vertical-scroll-proportion="0.27180067" vertical-offset="0" max-vertical-offset="885">
+          <folding>
+            <element signature="e#47#92#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
