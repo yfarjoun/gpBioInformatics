@@ -12,7 +12,7 @@ class BQSRSeveralWays extends QScript {
 
   @Argument(shortName = "r", required = false, doc = "Reference sequence") var referenceFile: File = new File("/humgen/1kg/reference/human_g1k_v37_decoy.fasta")
 
-  @Argument(required = true, doc = "Intervals to use for BQSR") var Intervals: File = _
+  @Argument(required = true, doc = "Intervals to use for BQSR") var Intervals: List[File] = _
 
   @Argument(shortName = "v", required = true, doc = "Standard Variants to avoid") var Variants: List[File] = _
 
@@ -22,7 +22,7 @@ class BQSRSeveralWays extends QScript {
 
   def script() {
     for (file <- inputFile)
-      for (intervals <- Map("Intervals" -> Intervals, "NoIntervals" -> null))
+      for (intervals <- Map("Intervals" -> Intervals, "NoIntervals" -> Nil))
         for (variants <- Map("GenericVariants" -> Variants, "NA12878_variants" -> NA12878Variants))
           BQSRFile(file, intervals, variants)
   }
@@ -32,13 +32,13 @@ class BQSRSeveralWays extends QScript {
     useOriginalQualities = true
   }
 
-  def BQSRFile(file: File, intervals: (String, File), variants: (String, List[File])) {
+  def BQSRFile(file: File, intervals: (String, List[File]), variants: (String, List[File])) {
 
     val bqsr = new BaseRecalibrator with CommonArguments
     bqsr.knownSites = variants._2
     bqsr.out = swapExt(file, ".bam", "." + intervals._1 + "." + variants._1 + ".tbl")
-    bqsr.intervals :+= intervals._2
-    bqsr.scatterCount = scatterCount
+    bqsr.intervals ++= intervals._2
+    bqsr.scatterCount = qscript.scatterCount
     bqsr.input_file :+= file
 
     add(bqsr)
@@ -50,5 +50,4 @@ class BQSRSeveralWays extends QScript {
 
     add(pr)
   }
-
 }

@@ -164,7 +164,7 @@ class FindNoKmerCoverageScript extends QScript {
 
     fncbl.input_file = bamList
     fncbl.memoryLimit = 8
-    fncbl.scatterCount = qscript.jobs
+    fncbl.scatterCount = jobs
     add(fncbl)
 
     //Convert To R-Readable
