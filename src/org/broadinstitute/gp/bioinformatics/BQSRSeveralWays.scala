@@ -12,7 +12,7 @@ class BQSRSeveralWays extends QScript {
 
   @Argument(shortName = "r", required = false, doc = "Reference sequence") var referenceFile: File = new File("/humgen/1kg/reference/human_g1k_v37_decoy.fasta")
 
-  @Argument(shortName = "l", required = true, doc = "Intervals to use for BQSR") var Intervals: File = _
+  @Argument(required = true, doc = "Intervals to use for BQSR") var Intervals: File = _
 
   @Argument(shortName = "v", required = true, doc = "Standard Variants to avoid") var Variants: List[File] = _
 

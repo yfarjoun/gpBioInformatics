@@ -106,7 +106,7 @@
       <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="0" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="24015">
+            <state line="24" column="0" selection-start="1332" selection-end="1332" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="24090">
               <folding />
             </state>
           </provider>
@@ -151,7 +151,7 @@
       <file leaf-file-name="BQSRSeveralWays.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/BQSRSeveralWays.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="23" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.59456396" vertical-offset="0" max-vertical-offset="885">
+            <state line="11" column="12" selection-start="362" selection-end="362" vertical-scroll-proportion="0.18686296" vertical-offset="0" max-vertical-offset="885">
               <folding>
                 <element signature="e#47#92#0" expanded="true" />
               </folding>
@@ -1071,7 +1071,11 @@
       <created>1406310861870</created>
       <updated>1406310861870</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="a small script for testing BQSR problems&#10;">
+      <created>1406310969351</created>
+      <updated>1406310969351</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1115,7 +1119,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="thanks to Alec project is working again. Also made a change to the ExtractMAF script&#10;" />
     <MESSAGE value="small change to annotation&#10;" />
     <MESSAGE value="moving stuff around&#10;" />
     <MESSAGE value="fixed a typo" />
@@ -1140,7 +1143,8 @@
     <MESSAGE value="an actual working version...." />
     <MESSAGE value="an actual working version....&#10;" />
     <MESSAGE value="a small script for testing BQSR problems" />
-    <option name="LAST_COMMIT_MESSAGE" value="a small script for testing BQSR problems" />
+    <MESSAGE value="a small script for testing BQSR problems&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="a small script for testing BQSR problems&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1367,7 +1371,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="24015">
+        <state line="24" column="0" selection-start="1332" selection-end="1332" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="24090">
           <folding />
         </state>
       </provider>
@@ -1484,7 +1488,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/BQSRSeveralWays.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="23" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.59456396" vertical-offset="0" max-vertical-offset="885">
+        <state line="11" column="12" selection-start="362" selection-end="362" vertical-scroll-proportion="0.18686296" vertical-offset="0" max-vertical-offset="885">
           <folding>
             <element signature="e#47#92#0" expanded="true" />
           </folding>
