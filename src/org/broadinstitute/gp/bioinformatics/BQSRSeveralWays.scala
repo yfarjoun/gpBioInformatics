@@ -33,7 +33,7 @@ class BQSRSeveralWays extends QScript {
     trait CommonArguments extends CommandLineGATK {
       this.reference_sequence = referenceFile
       this.intervals = intervals
-      this.inputs :+= file
+      this.input_file :+= file
       this.useOriginalQualities = true
     }
 

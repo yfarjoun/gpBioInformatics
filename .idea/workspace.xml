@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" readonly="true" id="d17c68eb-a92b-4499-88c0-89e11f16825d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/BQSRSeveralWays.scala" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/BQSRSeveralWays.scala" afterPath="$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/BQSRSeveralWays.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="gpBioInfo.iws" />
@@ -108,7 +106,7 @@
       <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="0" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="23985">
+            <state line="23" column="0" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="24015">
               <folding />
             </state>
           </provider>
@@ -153,7 +151,7 @@
       <file leaf-file-name="BQSRSeveralWays.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/BQSRSeveralWays.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="25" selection-start="656" selection-end="656" vertical-scroll-proportion="0.27180067" vertical-offset="0" max-vertical-offset="885">
+            <state line="35" column="23" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.59456396" vertical-offset="0" max-vertical-offset="885">
               <folding>
                 <element signature="e#47#92#0" expanded="true" />
               </folding>
@@ -191,7 +189,7 @@
       <file leaf-file-name="CommandLineGATK.class" pinned="false" current="false" current-in-tab="false">
         <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/gatk/CommandLineGATK.class">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="10" selection-start="15271" selection-end="15275" vertical-scroll-proportion="-8.0" vertical-offset="1287" max-vertical-offset="3330">
+            <state line="1" column="6" selection-start="61" selection-end="61" vertical-scroll-proportion="-0.29411766" vertical-offset="0" max-vertical-offset="3330">
               <folding />
             </state>
           </provider>
@@ -1069,7 +1067,11 @@
       <created>1406233395477</created>
       <updated>1406233395477</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="a small script for testing BQSR problems">
+      <created>1406310861870</created>
+      <updated>1406310861870</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1137,7 +1139,8 @@
     <MESSAGE value="made centromerelocation optional" />
     <MESSAGE value="an actual working version...." />
     <MESSAGE value="an actual working version....&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="an actual working version....&#10;" />
+    <MESSAGE value="a small script for testing BQSR problems" />
+    <option name="LAST_COMMIT_MESSAGE" value="a small script for testing BQSR problems" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1364,7 +1367,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="0" selection-start="1491" selection-end="1491" vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="23955">
+        <state line="23" column="0" selection-start="1116" selection-end="1116" vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="24015">
           <folding />
         </state>
       </provider>
@@ -1444,23 +1447,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/function/QFunction.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="6" selection-start="2825" selection-end="2825" vertical-scroll-proportion="-21.0" vertical-offset="0" max-vertical-offset="990">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/scala/Predef.class">
       <provider selected="true" editor-type-id="text-editor">
         <state line="76" column="8" selection-start="4652" selection-end="4652" vertical-scroll-proportion="-11.76" vertical-offset="846" max-vertical-offset="3150">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/gatk/CommandLineGATK.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="10" selection-start="15271" selection-end="15275" vertical-scroll-proportion="-8.0" vertical-offset="1287" max-vertical-offset="3330">
           <folding />
         </state>
       </provider>
@@ -1479,9 +1468,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/function/QFunction.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="6" selection-start="2825" selection-end="2825" vertical-scroll-proportion="-21.0" vertical-offset="0" max-vertical-offset="990">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/gatk/CommandLineGATK.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="6" selection-start="61" selection-end="61" vertical-scroll-proportion="-0.29411766" vertical-offset="0" max-vertical-offset="3330">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/BQSRSeveralWays.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="25" selection-start="656" selection-end="656" vertical-scroll-proportion="0.27180067" vertical-offset="0" max-vertical-offset="885">
+        <state line="35" column="23" selection-start="1443" selection-end="1443" vertical-scroll-proportion="0.59456396" vertical-offset="0" max-vertical-offset="885">
           <folding>
             <element signature="e#47#92#0" expanded="true" />
           </folding>
