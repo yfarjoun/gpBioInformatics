@@ -18,7 +18,7 @@ class BQSRSeveralWays extends QScript {
 
   @Argument(required = true, doc = "Standard Variants to avoid") var NA12878Variants: List[File] = _
 
-  @Argument(shortName = "sc", doc = "scatter count") var scatterCount: Int = 1
+  @Argument(shortName = "sc", required = false, doc = "scatter count") var scatterCount: Int = 1
 
   def script() {
     for (file <- inputFile)
@@ -27,20 +27,19 @@ class BQSRSeveralWays extends QScript {
           BQSRFile(file, intervals, variants)
   }
 
-
-  def BQSRFile(file: File, intervals: (String, File), variants: (String, List[File])) {
+  def BQSRFile(file: File, intervalsArgument: (String, File), variants: (String, List[File])) {
 
     trait CommonArguments extends CommandLineGATK {
-      this.reference_sequence = referenceFile
-      this.intervals = intervals
-      this.input_file :+= file
-      this.useOriginalQualities = true
+      reference_sequence = referenceFile
+      intervals :+= intervalsArgument._2
+      input_file :+= file
+      useOriginalQualities = true
     }
 
     val bqsr = new BaseRecalibrator with CommonArguments
     bqsr.knownSites = variants._2
-    bqsr.out = swapExt(file, ".bam", "." + intervals._1 + "." + variants._1 + ".tbl")
-    bqsr.scatterCount
+    bqsr.out = swapExt(file, ".bam", "." + intervalsArgument._1 + "." + variants._1 + ".tbl")
+    bqsr.scatterCount=scatterCount
 
     add(bqsr)
 
