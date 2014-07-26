@@ -51,11 +51,12 @@ class BQSRSeveralWays extends QScript {
 
     add(pr)
 
-    val errorMetrics = new CollectBamErrorMetrics2
-    errorMetrics.bam = pr.out
-    errorMetrics.out = swapExt(pr.out, ".bam", "")
-    errorMetrics.variants = NA12878Variants(0)
+    val cbem2 = new CollectBamErrorMetrics2
+    cbem2.bam = pr.out
+    cbem2.out = swapExt(pr.out, ".bam", "")
+    cbem2.variants = NA12878Variants(0)
 
+    add(cbem2)
   }
 
   class CollectBamErrorMetrics2 extends JavaCommandLineFunction {

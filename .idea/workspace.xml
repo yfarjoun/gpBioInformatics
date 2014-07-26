@@ -106,7 +106,7 @@
       <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="19935">
+            <state line="10" column="0" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="20145">
               <folding />
             </state>
           </provider>
@@ -142,7 +142,7 @@
       <file leaf-file-name="BQSRSeveralWays.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/BQSRSeveralWays.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="69" column="6" selection-start="2674" selection-end="2674" vertical-scroll-proportion="0.74518687" vertical-offset="377" max-vertical-offset="1260">
+            <state line="58" column="13" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.5583239" vertical-offset="377" max-vertical-offset="1275">
               <folding>
                 <element signature="e#47#92#0" expanded="true" />
               </folding>
@@ -808,7 +808,11 @@
       <created>1406347567508</created>
       <updated>1406347567508</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="added collect error metrics&#10;">
+      <created>1406348562798</created>
+      <updated>1406348562798</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -852,7 +856,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="moving stuff around&#10;" />
     <MESSAGE value="fixed a typo" />
     <MESSAGE value="fixed R code" />
     <MESSAGE value="removed recursive code" />
@@ -877,7 +880,8 @@
     <MESSAGE value="a small script for testing BQSR problems" />
     <MESSAGE value="a small script for testing BQSR problems&#10;" />
     <MESSAGE value="added collect error metrics" />
-    <option name="LAST_COMMIT_MESSAGE" value="added collect error metrics" />
+    <MESSAGE value="added collect error metrics&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="added collect error metrics&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1062,7 +1066,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="19935">
+        <state line="10" column="0" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="20145">
           <folding />
         </state>
       </provider>
@@ -1221,7 +1225,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/BQSRSeveralWays.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="6" selection-start="2674" selection-end="2674" vertical-scroll-proportion="0.74518687" vertical-offset="377" max-vertical-offset="1260">
+        <state line="58" column="13" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.5583239" vertical-offset="377" max-vertical-offset="1275">
           <folding>
             <element signature="e#47#92#0" expanded="true" />
           </folding>
