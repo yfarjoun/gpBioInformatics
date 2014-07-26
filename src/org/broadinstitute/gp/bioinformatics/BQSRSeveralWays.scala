@@ -55,6 +55,7 @@ class BQSRSeveralWays extends QScript {
     cbem2.bam = pr.out
     cbem2.out = swapExt(pr.out, ".bam", "")
     cbem2.variants = NA12878Variants(0)
+    cbem2.reference = referenceFile
 
     add(cbem2)
   }
