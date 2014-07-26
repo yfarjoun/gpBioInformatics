@@ -3,6 +3,9 @@ package org.broadinstitute.gp.bioinformatics
 
 import org.broadinstitute.sting.queue.QScript
 import org.broadinstitute.sting.queue.extensions.gatk.{CommandLineGATK, BaseRecalibrator, PrintReads}
+import org.broadinstitute.gp.bioinformatics.utils.PicardCommandLineFunction
+import org.broadinstitute.sting.queue.function.JavaCommandLineFunction
+import java.io.File
 
 
 class BQSRSeveralWays extends QScript {
@@ -49,5 +52,28 @@ class BQSRSeveralWays extends QScript {
     pr.input_file :+= file
 
     add(pr)
+
+    val errorMetrics = new CollectBamErrorMetrics2
+    errorMetrics.bam = pr.out
+    errorMetrics.out = swapExt(pr.out, ".bam", "")
+    errorMetrics.variants = NA12878Variants(0)
+
+  }
+
+  class CollectBamErrorMetrics2 extends PicardCommandLineFunction {
+
+    @Input var bam: File = _
+    @Input var variants: File = _
+    @Output var out: File = _
+
+    val nist_interval = "/seq/tng/giab/union13callableMQonlymerged_addcert_nouncert_excludesimplerep_excludesegdups_excludedecoy_excludeRepSeqSTRs_noCNVs_v2.18_2mindatasets_5minYesNoRatio.interval_list"
+    this.jarPath = "/seq/tng/farjoun/temp/"
+    this.jarName = "CollectBamErrorMetrics2.jar"
+
+    override def commandLine = super.commandLine +
+      required("I=", bam, spaceSeparated = false) +
+      required("O=", out, spaceSeparated = false) +
+      required("V=", variants, spaceSeparated = false) +
+      required("L=", nist_interval, spaceSeparated = false)
   }
 }
