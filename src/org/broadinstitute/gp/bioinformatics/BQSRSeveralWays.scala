@@ -64,10 +64,11 @@ class BQSRSeveralWays extends QScript {
     @Input var bam: File = _
     @Input var variants: File = _
     @Output var out: File = _
+    @Argument var reference: File = _
 
     val nist_interval = "/seq/tng/giab/union13callableMQonlymerged_addcert_nouncert_excludesimplerep_excludesegdups_excludedecoy_excludeRepSeqSTRs_noCNVs_v2.18_2mindatasets_5minYesNoRatio.interval_list"
     this.jarFile = "/seq/tng/farjoun/temp/CollectBamErrorMetrics2.jar"
-    var tempDir:List[File]=List(new File("/local/scratch/"),new File("/seq/picardtemp3"))
+    var tempDir: List[File] = List(new File("/local/scratch/"), new File("/seq/picardtemp3"))
     //this.memoryLimit=Option(1)
 
 
@@ -75,6 +76,8 @@ class BQSRSeveralWays extends QScript {
       required("I=", bam, spaceSeparated = false) +
       required("O=", out, spaceSeparated = false) +
       required("V=", variants, spaceSeparated = false) +
+      required("R=", reference, spaceSeparated = false) +
       required("L=", nist_interval, spaceSeparated = false)
   }
+
 }
