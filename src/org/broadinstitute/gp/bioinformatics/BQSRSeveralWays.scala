@@ -3,9 +3,7 @@ package org.broadinstitute.gp.bioinformatics
 
 import org.broadinstitute.sting.queue.QScript
 import org.broadinstitute.sting.queue.extensions.gatk.{CommandLineGATK, BaseRecalibrator, PrintReads}
-import org.broadinstitute.gp.bioinformatics.utils.PicardCommandLineFunction
 import org.broadinstitute.sting.queue.function.JavaCommandLineFunction
-import java.io.File
 
 
 class BQSRSeveralWays extends QScript {
@@ -60,15 +58,17 @@ class BQSRSeveralWays extends QScript {
 
   }
 
-  class CollectBamErrorMetrics2 extends PicardCommandLineFunction {
+  class CollectBamErrorMetrics2 extends JavaCommandLineFunction {
 
     @Input var bam: File = _
     @Input var variants: File = _
     @Output var out: File = _
 
     val nist_interval = "/seq/tng/giab/union13callableMQonlymerged_addcert_nouncert_excludesimplerep_excludesegdups_excludedecoy_excludeRepSeqSTRs_noCNVs_v2.18_2mindatasets_5minYesNoRatio.interval_list"
-    this.jarPath = "/seq/tng/farjoun/temp/"
-    this.jarName = "CollectBamErrorMetrics2.jar"
+    this.jarFile = "/seq/tng/farjoun/temp/CollectBamErrorMetrics2.jar"
+    var tempDir:List[File]=List(new File("/local/scratch/"),new File("/seq/picardtemp3"))
+    //this.memoryLimit=Option(1)
+
 
     override def commandLine = super.commandLine +
       required("I=", bam, spaceSeparated = false) +

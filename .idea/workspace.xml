@@ -88,7 +88,7 @@
       <file leaf-file-name="PicardCommandLineFunction.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/PicardCommandLineFunction.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="31" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+            <state line="16" column="4" selection-start="255" selection-end="472" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
               <folding />
             </state>
           </provider>
@@ -106,7 +106,7 @@
       <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="19890">
+            <state line="9" column="0" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="19935">
               <folding />
             </state>
           </provider>
@@ -142,19 +142,10 @@
       <file leaf-file-name="BQSRSeveralWays.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/BQSRSeveralWays.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="3" selection-start="2974" selection-end="2974" vertical-scroll-proportion="0.8810872" vertical-offset="377" max-vertical-offset="1260">
+            <state line="69" column="6" selection-start="2674" selection-end="2674" vertical-scroll-proportion="0.74518687" vertical-offset="377" max-vertical-offset="1260">
               <folding>
                 <element signature="e#47#92#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JavaCommandLineFunction.class" pinned="false" current="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/function/JavaCommandLineFunction.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="6" selection-start="54" selection-end="54" vertical-scroll-proportion="-0.6" vertical-offset="0" max-vertical-offset="420">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -280,6 +271,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="bioinformatics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="gpBioInfo2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bioinformatics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="utils" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -795,7 +804,11 @@
       <created>1406314749865</created>
       <updated>1406314749865</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="added collect error metrics">
+      <created>1406347567508</created>
+      <updated>1406347567508</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -839,7 +852,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="small change to annotation&#10;" />
     <MESSAGE value="moving stuff around&#10;" />
     <MESSAGE value="fixed a typo" />
     <MESSAGE value="fixed R code" />
@@ -864,7 +876,8 @@
     <MESSAGE value="an actual working version....&#10;" />
     <MESSAGE value="a small script for testing BQSR problems" />
     <MESSAGE value="a small script for testing BQSR problems&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="a small script for testing BQSR problems&#10;" />
+    <MESSAGE value="added collect error metrics" />
+    <option name="LAST_COMMIT_MESSAGE" value="added collect error metrics" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -874,20 +887,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/FindNoKmerCoverageScript.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="27" selection-start="8383" selection-end="8383" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4455">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/ExtractSubPopulationMAF.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="36" selection-start="185" selection-end="185" vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="1260">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/CreateSyntheticContaminationScript.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="54" column="80" selection-start="8690" selection-end="8690" vertical-scroll-proportion="0.0" vertical-offset="810" max-vertical-offset="5505">
@@ -1063,7 +1062,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="700" selection-end="700" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="23595">
+        <state line="9" column="0" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="19935">
           <folding />
         </state>
       </provider>
@@ -1192,23 +1191,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/picard/PicardBamFunction.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="6" selection-start="63" selection-end="63" vertical-scroll-proportion="0.017482517" vertical-offset="0" max-vertical-offset="858">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/extensions/picard/MarkDuplicates.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="175" selection-start="232" selection-end="232" vertical-scroll-proportion="0.01775148" vertical-offset="0" max-vertical-offset="845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/Queue-2.7-135-g3f96550.jar!/org/broadinstitute/sting/queue/function/JavaCommandLineFunction.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="6" selection-start="54" selection-end="54" vertical-scroll-proportion="-0.6" vertical-offset="0" max-vertical-offset="420">
+        <state line="17" column="6" selection-start="1393" selection-end="1393" vertical-scroll-proportion="0.2972028" vertical-offset="0" max-vertical-offset="858">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/utils/PicardCommandLineFunction.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="31" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
+        <state line="16" column="4" selection-start="255" selection-end="472" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="435">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/BQSRSeveralWays.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="3" selection-start="2974" selection-end="2974" vertical-scroll-proportion="0.8810872" vertical-offset="377" max-vertical-offset="1260">
+        <state line="69" column="6" selection-start="2674" selection-end="2674" vertical-scroll-proportion="0.74518687" vertical-offset="377" max-vertical-offset="1260">
           <folding>
             <element signature="e#47#92#0" expanded="true" />
           </folding>
