@@ -70,8 +70,9 @@ class BQSRSeveralWays extends QScript {
     val nist_interval = "/seq/tng/giab/union13callableMQonlymerged_addcert_nouncert_excludesimplerep_excludesegdups_excludedecoy_excludeRepSeqSTRs_noCNVs_v2.18_2mindatasets_5minYesNoRatio.interval_list"
     this.jarFile = "/seq/tng/farjoun/temp/CollectBamErrorMetrics2.jar"
     var tempDir: List[File] = List(new File("/local/scratch/"), new File("/seq/picardtemp3"))
-    this.memoryLimit=Option(8)
+    this.memoryLimit = Option(8)
 
+    this.jobNativeArgs ++= List("-l", "virtual_free=" + 8)
 
     override def commandLine = super.commandLine +
       required("I=", bam, spaceSeparated = false) +
