@@ -68,7 +68,7 @@ class BQSRSeveralWays extends QScript {
     @Argument var reference: File = _
 
     val nist_interval = "/seq/tng/giab/union13callableMQonlymerged_addcert_nouncert_excludesimplerep_excludesegdups_excludedecoy_excludeRepSeqSTRs_noCNVs_v2.18_2mindatasets_5minYesNoRatio.interval_list"
-    this.jarFile = "/seq/tng/farjoun/temp/CollectBamErrorMetrics2.jar"
+    this.jarFile = "/seq/tng/farjoun/temp/CollectBamErrorMetrics.jar"
     var tempDir: List[File] = List(new File("/local/scratch/"), new File("/seq/picardtemp3"))
     this.memoryLimit = Option(8)
 
