@@ -72,7 +72,7 @@ class BQSRSeveralWays extends QScript {
     var tempDir: List[File] = List(new File("/local/scratch/"), new File("/seq/picardtemp3"))
     this.memoryLimit = Option(8)
 
-    this.jobNativeArgs ++= List("-l", "virtual_free=" + 9000)
+    this.jobNativeArgs :+= "-l virtual_free=" + 9000
 
     override def commandLine = super.commandLine +
       required("I=", bam, spaceSeparated = false) +

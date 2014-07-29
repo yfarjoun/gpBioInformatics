@@ -106,7 +106,7 @@
       <file leaf-file-name="workspace.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="20430">
+            <state line="9" column="0" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="20550">
               <folding />
             </state>
           </provider>
@@ -142,7 +142,7 @@
       <file leaf-file-name="BQSRSeveralWays.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/BQSRSeveralWays.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="57" selection-start="2824" selection-end="2824" vertical-scroll-proportion="0.74518687" vertical-offset="452" max-vertical-offset="1350">
+            <state line="75" column="52" selection-start="2819" selection-end="2819" vertical-scroll-proportion="0.74518687" vertical-offset="467" max-vertical-offset="1350">
               <folding>
                 <element signature="e#47#92#0" expanded="true" />
               </folding>
@@ -832,7 +832,15 @@
       <created>1406406524848</created>
       <updated>1406406524848</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="added collect error metrics&#10;">
+      <created>1406551328955</created>
+      <updated>1406551328955</updated>
+    </task>
+    <task id="LOCAL-00046" summary="added collect error metrics&#10;">
+      <created>1406598437788</created>
+      <updated>1406598437788</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1086,7 +1094,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="20430">
+        <state line="9" column="0" selection-start="484" selection-end="484" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="20550">
           <folding />
         </state>
       </provider>
@@ -1245,7 +1253,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/broadinstitute/gp/bioinformatics/BQSRSeveralWays.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="57" selection-start="2824" selection-end="2824" vertical-scroll-proportion="0.74518687" vertical-offset="452" max-vertical-offset="1350">
+        <state line="75" column="52" selection-start="2819" selection-end="2819" vertical-scroll-proportion="0.74518687" vertical-offset="467" max-vertical-offset="1350">
           <folding>
             <element signature="e#47#92#0" expanded="true" />
           </folding>
