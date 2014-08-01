@@ -79,7 +79,7 @@ class BQSRSeveralWays extends QScript {
       required("O=", out, spaceSeparated = false) +
       required("V=", variants, spaceSeparated = false) +
       required("R=", reference, spaceSeparated = false) +
-      required("L=", nist_interval, spaceSeparated = false)
+      repeat("L=", List(nist_interval,"20"), spaceSeparated = false)
   }
 
 }
