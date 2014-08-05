@@ -11,15 +11,16 @@ class BQSRSeveralWays extends QScript {
 
   @Input(shortName = "i", required = true, doc = "Input Bam to be recalibrated") var inputFile: List[File] = _
 
-  @Argument(shortName = "r", required = false, doc = "Reference sequence") var referenceFile: File = new File("/humgen/1kg/reference/human_g1k_v37_decoy.fasta")
+  @Input(shortName = "r", required = false, doc = "Reference sequence") var referenceFile: File = new File("/seq/references/Homo_sapiens_assembly19/v1/Homo_sapiens_assembly19.fasta")
 
-  @Argument(required = true, doc = "Intervals to use for BQSR") var Intervals: List[File] = _
+  @Input(required = true, doc = "Intervals to use for BQSR") var Intervals: List[File] = _
 
-  @Argument(shortName = "v", required = true, doc = "Standard Variants to avoid") var Variants: List[File] = _
+  @Input(shortName = "v", required = true, doc = "Standard Variants to avoid") var Variants: List[File] = _
 
-  @Argument(required = true, doc = "Standard Variants to avoid") var NA12878Variants: List[File] = _
+  @Input(required = true, doc = "Standard Variants to avoid") var NA12878Variants: List[File] = _
 
   @Argument(shortName = "sc", required = false, doc = "scatter count") var scatterCount: Int = 1
+  @Argument(shortName = "P", required = false, doc="probability of using base in quality check") var probability:Double = _
 
   def script() {
     for (file <- inputFile)
@@ -51,7 +52,7 @@ class BQSRSeveralWays extends QScript {
 
     add(pr)
 
-    val cbem2 = new CollectBamErrorMetrics2
+    val cbem2 = new CollectBamErrorMetrics
     cbem2.bam = pr.out
     cbem2.out = swapExt(pr.out, ".bam", "")
     cbem2.variants = NA12878Variants(0)
@@ -60,7 +61,7 @@ class BQSRSeveralWays extends QScript {
     add(cbem2)
   }
 
-  class CollectBamErrorMetrics2 extends JavaCommandLineFunction {
+  class CollectBamErrorMetrics  extends JavaCommandLineFunction {
 
     @Input var bam: File = _
     @Input var variants: File = _
@@ -79,6 +80,7 @@ class BQSRSeveralWays extends QScript {
       required("O=", out, spaceSeparated = false) +
       required("V=", variants, spaceSeparated = false) +
       required("R=", reference, spaceSeparated = false) +
+      optional("P=", probability, spaceSeparated = false)+
       repeat("L=", List(nist_interval,"20"), spaceSeparated = false)
   }
 
